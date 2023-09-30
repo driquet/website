@@ -1,5 +1,5 @@
 # General configuration
-baseURL = 'https://driquet.github.io/website/'
+baseURL = 'https://driquet.info/'
 languageCode = 'en-us'
 title = 'Damien Riquet'
 theme = "DoIt"
