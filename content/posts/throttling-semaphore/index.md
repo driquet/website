@@ -114,7 +114,7 @@ func (s *Semaphore) TryAcquire() bool {
 
 ### Worker pool
 
-The initial scenario we'll explore into is quite common: you're faced with a collection of N tasks that need processing.
+The initial scenario we'll explore is quite common: you're faced with a collection of N tasks that need processing.
 Rather than handling them sequentially, you aim to process them concurrently, allowing at most M tasks to run
 simultaneously. Also, note that by using this semaphore-based mechanism, we avoid traditional worker pool implementation
 with idling goroutines.
