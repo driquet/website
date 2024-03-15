@@ -2,6 +2,8 @@
 title: "Targeted Attacks: Redefining Spear Phishing and Business Email Compromise"
 date: 2023-09-30T15:27:15+02:00
 tags: ["publication", "spear phishing", "business email compromise", "email", "attack"]
+toc:
+  enable: false
 ---
 
 I'm proud to announce that our latest article pre-print has been published on

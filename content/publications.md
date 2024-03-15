@@ -38,6 +38,10 @@ parallélisme, architecture et systèmes.
 
 ## About my work
 
+- :uk: **Three new forms of cyberattack to be worried about in 2022** (2021). Digital Journal.
+[:link:](https://www.digitaljournal.com/tech-science/three-new-forms-of-cyberattack-to-be-worried-about-in-2022/article)
+- :uk: **Remote work strategies are needed to challenge cyberattacks** (2021). Digital Journal.
+[:link:](https://www.digitaljournal.com/business/remote-work-strategies-are-needed-to-challenge-cyberattacks/article/583294)
 - :uk: **Email Security Predictions 2022: 4 Ways Hackers Will Target Businesses** (2021). Vade.
 [:link:](https://www.vadesecure.com/en/blog/email-security-predictions)
 - :uk: **3 Email Hacking Techniques to Watch in 2021** (2021). Cyber Defense Magazine.
@@ -50,4 +54,5 @@ parallélisme, architecture et systèmes.
 [:link:](https://www.linformaticien.com/magazine/cloud/57431-59pas-la-meme-chanson-avec-riana.html)
 - :uk: **An Update on Logo Detection Technology** (2021). Vade.
 [:link:](https://www.vadesecure.com/en/blog/an-update-on-logo-detection-technology)
-
+- :uk: ***Email Security Predictions: 6 Ways Hackers Target Businesses** (2020). Vade.
+[:link:](https://www.vadesecure.com/en/blog/email-security-predictions-6-ways-hackers-will-target-businesses/)
