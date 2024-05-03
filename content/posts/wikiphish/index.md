@@ -2,8 +2,6 @@
 title: "WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection"
 date: 2024-04-09T11:21:45+02:00
 tags: ["publication", "phishing", "dataset"]
-toc:
-  enable: false
 ---
 
 I'm proud to announce that our latest article **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection** has been accepted at CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).

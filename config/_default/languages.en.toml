@@ -1,0 +1,27 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Damien Riquet"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+# logo = "img/logo.png"
+# secondaryLogo = "img/secondary-logo.png"
+# description = "My awesome website"
+# copyright = "Copy, _right?_ :thinking_face:"
+
+[author]
+name = "Damien Riquet"
+image = "img/profile.jpg"
+headline = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
+bio = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
+links = [
+    { envelope = "mailto:d.riquet@gmail.com" },
+    { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
+    { linkedin = "https://linkedin.com/in/damien-riquet" },
+    { github = "https://github.com/driquet" },
+    { twitter = "https://twitter.com/driquet" },
+]

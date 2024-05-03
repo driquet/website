@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2023-07-20T16:58:00+02:00
+layout: "simple"
 ---
 
 Hello, **I'm Damien Riquet**, a Research Engineer with a passion for exploring
