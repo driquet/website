@@ -6,14 +6,14 @@ layout: "simple"
 
 # Scientific publications
 
-- :uk: Gabriel Loiseau, Valentin Lefils, Maxime Meyer, Damien Riquet. **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection** (2024). CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).
-- :uk: Sarah Wassermann, Maxime Meyer, Sébastien Goutal, Damien Riquet. **Targeted Attacks: Redefining Spear Phishing and Business Email Compromise** (2023). Pre-print (arxiv), ongoing Journal submission. [:link:](https://arxiv.org/abs/2309.14166)
-- :fr: Damien Riquet. **Discus : Une architecture de détection d'intrusions réseau distribuée basée sur un langage dédié** (2015). PhD Thesis. Université Lille 1 - Sciences et Technologies, 2015. [:link:](https://theses.hal.science/tel-01757859/)
-- :uk: Damien Riquet, Gilles Grimaud, Michaël Hauspie. **DISCUS: A massively distributed IDS architecture using a DSL-based configuration** (2014). International Conference on Information Science, Electronics and Electrical Engineering, Sapporo, Japan.
+- :uk: Gabriel Loiseau, Valentin Lefils, Maxime Meyer, **Damien Riquet** (2024). **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection**. CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).
+- :uk: Sarah Wassermann, Maxime Meyer, Sébastien Goutal, **Damien Riquet** (2023). **Targeted Attacks: Redefining Spear Phishing and Business Email Compromise**. Pre-print (arxiv), ongoing Journal submission. [:link:](https://arxiv.org/abs/2309.14166)
+- :fr: **Damien Riquet** (2015). **Discus : Une architecture de détection d'intrusions réseau distribuée basée sur un langage dédié**. PhD Thesis. Université Lille 1 - Sciences et Technologies. [:link:](https://theses.hal.science/tel-01757859/)
+- :uk: **Damien Riquet**, Gilles Grimaud, Michaël Hauspie (2014). **DISCUS: A massively distributed IDS architecture using a DSL-based configuration**. International Conference on Information Science, Electronics and Electrical Engineering, Sapporo, Japan.
 [:link:](https://hal.univ-lille.fr/hal-00996876)
-- :fr: Damien Riquet, Gilles Grimaud, Michaël Hauspie. **Un langage pour la configuration de DISCUS, une architecture distribuée de solutions de sécurité** (2014). ComPAS : conférence en parallélisme, architecture et systèmes, Neuchâtel, Suisse. [:link:](https://hal.science/hal-00995674/)
-- :fr: Damien Riquet, Gilles Grimaud, Michaël Hauspie. **Etude de l'impact des attaques distribuées et multi-chemins sur les solutions de sécurité réseaux** (2012). 9ème édition de la conférence MAnifestation des JEunes Chercheurs en Sciences et Technologies de l'Information et de la Communication, Lille, France. [:link:](https://hal.science/hal-00746991/)
-- :uk: Damien Riquet, Gilles Grimaud, Michaël Hauspie. **Large-Scale Coordinated attacks: Impact on the Cloud Security** (2012). Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing, Palermo, Italy. [:link:](https://ieeexplore.ieee.org/abstract/document/6296915)
+- :fr: **Damien Riquet**, Gilles Grimaud, Michaël Hauspie (2014). **Un langage pour la configuration de DISCUS, une architecture distribuée de solutions de sécurité**. ComPAS : conférence en parallélisme, architecture et systèmes, Neuchâtel, Suisse. [:link:](https://hal.science/hal-00995674/)
+- :fr: **Damien Riquet**, Gilles Grimaud, Michaël Hauspie (2012). **Etude de l'impact des attaques distribuées et multi-chemins sur les solutions de sécurité réseaux**. 9ème édition de la conférence MAnifestation des JEunes Chercheurs en Sciences et Technologies de l'Information et de la Communication, Lille, France. [:link:](https://hal.science/hal-00746991/)
+- :uk: **Damien Riquet**, Gilles Grimaud, Michaël Hauspie (2012). **Large-Scale Coordinated attacks: Impact on the Cloud Security**. Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing, Palermo, Italy. [:link:](https://ieeexplore.ieee.org/abstract/document/6296915)
 
 # Others
 

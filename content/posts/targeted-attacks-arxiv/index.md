@@ -6,18 +6,10 @@ toc:
   enable: false
 ---
 
-I'm proud to announce that our latest article pre-print has been published on
-arxiv! It has also been submitted to a journal, and hopefully be published in
-the next few months.
+I'm proud to announce that our latest article pre-print has been published on arxiv! It has also been submitted to a journal, and hopefully be published in the next few months.
 
-*TL;DR*: Cybercrime, a major cause of financial losses and intellectual property
-theft, often begins with email, the primary means of corporate communication.
-Spear phishing or Business Email Compromise are rare, damaging email threats.
-However, literature on targeted attacks is inconsistent, hindering security
-vendors and researchers from mitigating them. This study introduces targeted
-attacks, discusses targeted-attack-detection techniques, and presents
-text-based attacks, comparing non-targeted and targeted variants.
+*TL;DR*: Cybercrime, a major cause of financial losses and intellectual property theft, often begins with email, the primary means of corporate communication. Spear phishing or Business Email Compromise are rare, damaging email threats. However, literature on targeted attacks is inconsistent, hindering security vendors and researchers from mitigating them. This study introduces targeted attacks, discusses targeted-attack-detection techniques, and presents text-based attacks, comparing non-targeted and targeted variants.
 
-> :uk: Sarah Wassermann, Maxime Meyer, Sébastien Goutal, Damien Riquet. **Targeted Attacks: Redefining Spear Phishing
-> and Business Email Compromise** (2023). Pre-print (arxiv), ongoing Journal submission.
+> :uk: **Targeted Attacks: Redefining Spear Phishing
+> and Business Email Compromise**. Sarah Wassermann, Maxime Meyer, Sébastien Goutal, **Damien Riquet**. Pre-print (arxiv), ongoing Journal submission.
 > [:link:](https://arxiv.org/abs/2309.14166)
