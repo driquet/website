@@ -24,6 +24,7 @@ layout: "simple"
 
 ## About my work
 
+- :uk: **Remote Images Are Pushing Email Filters to Their Limits** (2021). Vade. [:link:](https://www.vadesecure.com/en/blog/remote-images-are-pushing-email-filters-to-their-limits)
 - :uk: **Three new forms of cyberattack to be worried about in 2022** (2021). Digital Journal. [:link:](https://www.digitaljournal.com/tech-science/three-new-forms-of-cyberattack-to-be-worried-about-in-2022/article)
 - :uk: **Remote work strategies are needed to challenge cyberattacks** (2021). Digital Journal. [:link:](https://www.digitaljournal.com/business/remote-work-strategies-are-needed-to-challenge-cyberattacks/article/583294)
 - :uk: **Email Security Predictions 2022: 4 Ways Hackers Will Target Businesses** (2021). Vade. [:link:](https://www.vadesecure.com/en/blog/email-security-predictions)
