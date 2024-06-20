@@ -6,7 +6,7 @@ layout: "simple"
 
 # Scientific publications
 
-- :uk: Gabriel Loiseau, Valentin Lefils, Maxime Meyer, **Damien Riquet** (2024). **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection**. CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).
+- :uk: Gabriel Loiseau, Valentin Lefils, Maxime Meyer, **Damien Riquet** (2024). **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection**. CODASPY 2024 (ACM Conference on Data and Application Security and Privacy). [:link:](https://doi.acm.org?doi=3626232.3653283)
 - :uk: Sarah Wassermann, Maxime Meyer, Sébastien Goutal, **Damien Riquet** (2023). **Targeted Attacks: Redefining Spear Phishing and Business Email Compromise**. Pre-print (arxiv), ongoing Journal submission. [:link:](https://arxiv.org/abs/2309.14166)
 - :fr: **Damien Riquet** (2015). **Discus : Une architecture de détection d'intrusions réseau distribuée basée sur un langage dédié**. PhD Thesis. Université Lille 1 - Sciences et Technologies. [:link:](https://theses.hal.science/tel-01757859/)
 - :uk: **Damien Riquet**, Gilles Grimaud, Michaël Hauspie (2014). **DISCUS: A massively distributed IDS architecture using a DSL-based configuration**. International Conference on Information Science, Electronics and Electrical Engineering, Sapporo, Japan.
