@@ -1,3 +1,7 @@
 .article-content {
     text-align: justify;
 }
+
+.chroma .lntable {
+    overflow-x: auto;
+}
