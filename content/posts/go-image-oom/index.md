@@ -9,7 +9,11 @@ showTableOfContents: true
 
 Cyberattacks are highly opportunistic, exploiting any available vector to infiltrate and deliver their threats. One surprising attack surface? Images. Malicious actors often craft images specifically designed to slip past security solutions, knowing that processing them can be resource-intensive. Several years ago, at Vade, I began working on Computer Vision components to combat this, developing tools capable of detecting threats hidden in images. One such tool was RIANA, which at its peak was blocking up to [500 million spam emails over a 90-day period](https://www.vadesecure.com/en/blog/an-update-on-logo-detection-technology).
 
-As with much of our work at Vade, these components are developed in Go, and along the way, we noticed a recurring problem: our image-handling services were regularly crashing due to high memory consumption. In this article, I’ll walk you through the reasons behind these crashes, how we diagnosed them, and the solutions we implemented to keep things running smoothly (and prevent our services from taking unplanned naps).
+As with much of our work at Vade, these components are developed in Go, and along the way, we noticed a recurring problem: our image-handling services were regularly crashing due to high memory consumption. In this article, I’ll walk you through the reasons behind these crashes, how we could diagnose them, and the possible solutions to implement to keep things running smoothly (and prevent our services from taking unplanned naps).
+
+{{< alert "circle-info" >}}
+**Disclaimer**: The content of this article represents my personal technical insights and does not constitute my employer's perspectives. All code snippets and scenarios are synthetic, developed solely for educational and illustrative purposes.
+{{< /alert >}}
 
 ## A Practical Example
 
