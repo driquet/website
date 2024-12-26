@@ -13,7 +13,7 @@ dateFormat = "2 January 2006"
 # description = "My awesome website"
 # copyright = "Copy, _right?_ :thinking_face:"
 
-[author]
+[params.author]
 name = "Damien Riquet"
 image = "img/profile.jpg"
 headline = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
@@ -24,4 +24,5 @@ links = [
     { linkedin = "https://linkedin.com/in/damien-riquet" },
     { github = "https://github.com/driquet" },
     { twitter = "https://twitter.com/driquet" },
+    { bluesky = "https://bsky.app/profile/driquet.info" },
 ]
