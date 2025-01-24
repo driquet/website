@@ -1,0 +1,418 @@
+[
+	{
+		"id": "stenberg2015",
+		"type": "webpage",
+		"title": "One year and 6.76 million key-presses later",
+		"URL": "https://daniel.haxx.se/blog/2015/08/19/one-year-and-6-76-million-key-presses-later/",
+		"author": [
+			{
+				"family": "Stenberg",
+				"given": "Daniel"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "santepubliquefrance2024",
+		"type": "webpage",
+		"language": "French",
+		"title": "Syndrome du canal carpien",
+		"URL": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-liees-au-travail/troubles-musculo-squelettiques/donnees/syndrome-du-canal-carpien",
+		"author": [
+			{
+				"family": "Sante Publique France",
+				"given": ""
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "u.s.bureauoflaborstatistics2020",
+		"type": "webpage",
+		"abstract": "Occupational injuries and illnesses resulting in musculoskeletal disorders (MSDs)",
+		"container-title": "Bureau of Labor Statistics",
+		"language": "en",
+		"title": "Occupational injuries and illnesses resulting in musculoskeletal disorders (MSDs)",
+		"URL": "https://www.bls.gov/iif/factsheets/msds.htm",
+		"author": [
+			{
+				"family": "U.S. Bureau of Labor Statistics",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "garnett2023",
+		"type": "article-journal",
+		"abstract": "Objectives-This report describes the percentage of adults aged 18 and over who reported injuries from repetitive strain in the past 3 months by selected sociodemographic characteristics, including age, sex, race and Hispanic origin, and family income. The impacts of these injuries-limitation of usual activity for at least 24 hours and whether a medical professional was consulted for the injuries-are also examined. Methods-Data from the 2021 National Health Interview Survey were used to estimate the percentage of adults who had repetitive strain injuries in the past 3 months by sociodemographic characteristics. Among those who had a repetitive strain injury in the past 3 months, 24-hour limitation of activity and consultation of a medical professional are also examined by sociodemographic characteristics. Results-In 2021, for adults aged 18 and over in the United States, 9.0% had repetitive strain injuries in the past 3 months. Adults aged 35-49 (10.3%) and 50-64 (11.6%), White non-Hispanic adults (subsequently, White; 9.5%), and adults with family income at 400% or more of the federal poverty level (9.8%) tended to have higher percentages. For those who had repetitive strain injuries, 44.2% limited their activities for at least 24 hours, with the highest percentages among White adults (47.0%), women (47.1%), and adults with a family income less than 200% of the federal poverty level (51.0%). For those who limited their activity for at least 24 hours due to a repetitive strain injury, 51.4% consulted a doctor or medical professional, with the highest percentages among women (56.3%) and Black non-Hispanic adults (66.2%).",
+		"container-title": "National Health Statistics Reports",
+		"ISSN": "2332-8363",
+		"issue": "189",
+		"journalAbbreviation": "Natl Health Stat Report",
+		"language": "eng",
+		"note": "PMID: 37489954",
+		"page": "1-10",
+		"source": "PubMed",
+		"title": "Repetitive Strain Injuries in Adults in the Past 3 Months: United States, 2021",
+		"title-short": "Repetitive Strain Injuries in Adults in the Past 3 Months",
+		"author": [
+			{
+				"family": "Garnett",
+				"given": "Matthew F."
+			},
+			{
+				"family": "Elgaddal",
+				"given": "Nazik"
+			},
+			{
+				"family": "Spencer",
+				"given": "Merianne Rose"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					7
+				]
+			]
+		}
+	},
+	{
+		"id": "taylor2007",
+		"type": "article-journal",
+		"container-title": "Wellnomics, Christchurch, New Zealand",
+		"source": "Google Scholar",
+		"title": "An analysis of computer use across 95 organisations in Europe, North America and Australasia",
+		"author": [
+			{
+				"family": "Taylor",
+				"given": "Kevin"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2007"
+				]
+			]
+		}
+	},
+	{
+		"id": "andersen2003",
+		"type": "article-journal",
+		"abstract": "ContextComputer use is increasingly common among many working populations, and concern exists about possible adverse effects of computer use, such as\ncarpal tunnel syndrome (CTS).ObjectivesTo estimate the prevalence and incidence of possible CTS and to evaluate\nthe contribution of use of mouse devices and keyboards to the risk of possible\nCTS.Design and SettingA 1-year follow-up study with questionnaires conducted in 2000 and 2001\nat 3500 workplaces in Denmark, followed on each of the 2 occasions by a clinical\ninterview on symptom distribution and frequency.ParticipantsThe questionnaire was sent to 9480 members of a trade union, with an\ninitial response rate of 73% (n = 6943), and 82% (n = 5658) at follow-up.Main Outcome MeasuresAt baseline, there were 3 outcome measures: tingling/numbness in the\nright hand once a week or more as reported in the questionnaire; tingling,\nnumbness, and pain in the median nerve in the right hand confirmed by clinical\ninterview; and tingling, numbness, and pain in the median nerve in the right\nhand at night confirmed by clinical interview. At\n1 year of follow-up the main outcome of interest was onset of symptoms among\nparticipants who had no or minor symptoms at baseline.ResultsThe overall self-reported prevalence of tingling/numbness in the right\nhand at baseline was 10.9%. The interview confirmed that prevalence of tingling/numbness\nin the median nerve was 4.8%, of which about one third, corresponding to a\nprevalence of 1.4%, experienced symptoms at night. Onset of new symptoms in\nthe 1-year follow-up was 5.5%. In the cross-sectional comparisons and in the\nfollow-up analyses, there was an association between use of a mouse device\nfor more than 20 h/wk and risk of possible CTS but no statistically significant\nassociation with keyboard use.ConclusionsThe occurrence of possible CTS in the right hand was low. The study\nemphasizes that computer use does not pose a severe occupational hazard for\ndeveloping symptoms of CTS.",
+		"container-title": "JAMA",
+		"DOI": "10.1001/jama.289.22.2963",
+		"ISSN": "0098-7484",
+		"issue": "22",
+		"journalAbbreviation": "JAMA",
+		"page": "2963-2969",
+		"source": "Silverchair",
+		"title": "Computer Use and Carpal Tunnel SyndromeA 1-Year Follow-up Study",
+		"URL": "https://doi.org/10.1001/jama.289.22.2963",
+		"volume": "289",
+		"author": [
+			{
+				"family": "Andersen",
+				"given": "Johan Hviid"
+			},
+			{
+				"family": "Thomsen",
+				"given": "Jane Froelund"
+			},
+			{
+				"family": "Overgaard",
+				"given": "Erik"
+			},
+			{
+				"family": "Lassen",
+				"given": "Christina Funch"
+			},
+			{
+				"family": "Brandt",
+				"given": "Lars Peter Andreas"
+			},
+			{
+				"family": "Vilstrup",
+				"given": "Imogen"
+			},
+			{
+				"family": "Kryger",
+				"given": "Ann Isabel"
+			},
+			{
+				"family": "Mikkelsen",
+				"given": "Sigurd"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2003",
+					6,
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "ijmker2007",
+		"type": "article-journal",
+		"abstract": "Worldwide, millions of office workers use a computer. Reports of adverse health effects due to computer use have received considerable media attention. This systematic review summarises the evidence for a relationship between the duration of work time spent using the computer and the incidence of hand–arm and neck–shoulder symptoms and disorders. Several databases were systematically searched up to 6 November 2005. Two reviewers independently selected articles that presented a risk estimate for the duration of computer use, included an outcome measure related to hand–arm or neck–shoulder symptoms or disorders, and had a longitudinal study design. The strength of the evidence was based on methodological quality and consistency of the results. Nine relevant articles were identified, of which six were rated as high quality. Moderate evidence was concluded for a positive association between the duration of mouse use and hand–arm symptoms. For this association, indications for a dose–response relationship were found. Risk estimates were in general stronger for the hand–arm region than for the neck–shoulder region, and stronger for mouse use than for total computer use and keyboard use. A pathophysiological model focusing on the overuse of muscles during computer use supports these differences. Future studies are needed to improve our understanding of safe levels of computer use by measuring the duration of computer use in a more objective way, differentiating between total computer use, mouse use and keyboard use, attaining sufficient exposure contrast, and collecting data on disability caused by symptoms.",
+		"container-title": "Occupational and Environmental Medicine",
+		"DOI": "10.1136/oem.2006.026468",
+		"ISSN": "1351-0711, 1470-7926",
+		"issue": "4",
+		"language": "en",
+		"license": "© Occupational and Environmental Medicine",
+		"note": "publisher: BMJ Publishing Group Ltd\nsection: Review\nPMID: 17095550",
+		"page": "211-222",
+		"source": "oem.bmj.com",
+		"title": "Should office workers spend fewer hours at their computer? A systematic review of the literature",
+		"title-short": "Should office workers spend fewer hours at their computer?",
+		"URL": "https://oem.bmj.com/content/64/4/211",
+		"volume": "64",
+		"author": [
+			{
+				"family": "IJmker",
+				"given": "S."
+			},
+			{
+				"family": "Huysmans",
+				"given": "M. A."
+			},
+			{
+				"family": "Blatter",
+				"given": "B. M."
+			},
+			{
+				"family": "Beek",
+				"given": "A. J.",
+				"dropping-particle": "van der"
+			},
+			{
+				"family": "Mechelen",
+				"given": "W.",
+				"dropping-particle": "van"
+			},
+			{
+				"family": "Bongers",
+				"given": "P. M."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2007",
+					4,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "brandt2004",
+		"type": "article-journal",
+		"container-title": "Scandinavian Journal of Work, Environment & Health",
+		"DOI": "10.5271/sjweh.828",
+		"ISSN": "0355-3140",
+		"issue": "5",
+		"page": "399-409",
+		"source": "COinS",
+		"title": "Neck and shoulder symptoms and disorders among Danish computer workers",
+		"volume": "30",
+		"author": [
+			{
+				"family": "Brandt",
+				"given": "Lars Peter Andreas"
+			},
+			{
+				"family": "Andersen",
+				"given": "Johan Hviid"
+			},
+			{
+				"family": "Lassen",
+				"given": "Christina Funch"
+			},
+			{
+				"family": "Kryger",
+				"given": "Ann"
+			},
+			{
+				"family": "Overgaard",
+				"given": "Erik"
+			},
+			{
+				"family": "Vilstrup",
+				"given": "Imogen"
+			},
+			{
+				"family": "Mikkelsen",
+				"given": "Sigurd"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2004"
+				]
+			]
+		}
+	},
+	{
+		"id": "cook2000",
+		"type": "article-journal",
+		"abstract": "Computer pointing devices such as the mouse are widely used. Despite this, the relationship between musculoskeletal symptoms and mouse use has not been established. The aim of this cross-sectional study was to determine whether a relationship existed between computer mouse use and musculoskeletal symptoms in a sample of 270 computer mouse users. Factors demonstrating a significant association with symptoms were entered into a step-wise multiple logistic regression, adjusting for age and sex and controlling for potential interdependence between variables. No relationship was found between hours of mouse use per day and reported symptoms. A relationship was found between the variable of arm abduction which is specific to mouse use and symptoms in the neck. Relationships were found between non-mouse-specific risk factors such as stress, screen height and shoulder elevation. The findings of this study support the hypothesis that mouse use may contribute to musculoskeletal injury of the neck and upper extremity. Mouse users are exposed to the same recognised risk factors associated with keyboard use as well as the additional risk factor of arm abduction during mouse use.\nRelevance to industry\nComputer keyboard use has been associated with musculoskeletal injuries. Most people now use a pointing device such as the mouse to supplement the computer keyboard. Additional risk factors related to mouse use have the potential to increase prevalence of computer-related injuries.",
+		"container-title": "International Journal of Industrial Ergonomics",
+		"DOI": "10.1016/S0169-8141(00)00010-X",
+		"ISSN": "0169-8141",
+		"issue": "3",
+		"journalAbbreviation": "International Journal of Industrial Ergonomics",
+		"page": "347-356",
+		"source": "ScienceDirect",
+		"title": "The prevalence of neck and upper extremity musculoskeletal symptoms in computer mouse users",
+		"URL": "https://www.sciencedirect.com/science/article/pii/S016981410000010X",
+		"volume": "26",
+		"author": [
+			{
+				"family": "Cook",
+				"given": "Catherine"
+			},
+			{
+				"family": "Burgess-Limerick",
+				"given": "Robin"
+			},
+			{
+				"family": "Chang",
+				"given": "Sungwon"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2000",
+					9,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "palmer1995",
+		"type": "article-journal",
+		"abstract": "In conclusion, we estimate the incidence of carpal tunnel surgery to be between 400,000 and 500,000 cases annually in the United States, with economic costs in excess of $2 billion per year. The costs incurred in workers' compensation cases are almost three times those of other workers and five times those of nonworkers. Despite an increase in medial costs for endoscopic carpal tunnel release, the procedure has a potential to decrease overall costs by lowering productivity and wage reimbursement losses. With better surveillance and data collection systems, workers at risk can be identified and the incidence of occupational carpal tunnel syndrome reduced through appropriate worksite intervention.",
+		"container-title": "Instructional Course Lectures",
+		"ISSN": "0065-6895",
+		"journalAbbreviation": "Instr Course Lect",
+		"language": "eng",
+		"note": "PMID: 7797856",
+		"page": "167-172",
+		"source": "PubMed",
+		"title": "Social and economic costs of carpal tunnel surgery",
+		"volume": "44",
+		"author": [
+			{
+				"family": "Palmer",
+				"given": "D. H."
+			},
+			{
+				"family": "Hanrahan",
+				"given": "L. P."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1995"
+				]
+			]
+		}
+	},
+	{
+		"id": "outpatientsurgerymagazine2024",
+		"type": "webpage",
+		"abstract": "Carpal tunnel surgery is a common and exceedingly effective intervention for the numbness, tingling and outright pain that can be maddening for those suffering from the compressed nerve condition &mdash but one...",
+		"container-title": "Outpatient Surgery Magazine",
+		"language": "en",
+		"title": "Endoscopic Carpal Tunnel Surgery Equals Speedier Recoveries",
+		"URL": "https://www.aorn.org/outpatient-surgery/article/june-6--2024",
+		"author": [
+			{
+				"family": "Outpatient Surgery Magazine",
+				"given": ""
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2025",
+					1,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	}
+]
