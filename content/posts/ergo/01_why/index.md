@@ -60,7 +60,7 @@ For employers, the advantages are clear: healthier employees mean higher product
 On a societal level, better workplace ergonomics lead to fewer injuries and illnesses, easing the burden on healthcare systems and lowering overall healthcare costs. A healthier workforce ultimately benefits everyone, fueling economic growth and improving collective well-being.
 
 ## Conclusion
-What can we do to avoid the need for surgery by the age of 50? The answer lies in optimizing how we use our devices. The good news is that these improvements don’t just prevent long-term injury, they can also make us more efficient and productive. This is what led me, in late 2015, to dive deep into the world of keyboard layouts, ergonomic keyboards, and related topics. In this series of articles, I'll share a condensed version of the key insights I've gathered on this journey. First stop, Touch Typing!
+What can we do to avoid the need for surgery by the age of 50? The answer lies in optimizing how we use our devices. The good news is that these improvements don’t just prevent long-term injury, they can also make us more efficient and productive. This is what led me, in late 2015, to dive deep into the world of keyboard layouts, ergonomic keyboards, and related topics. In this series of articles, I'll share a condensed version of the key insights I've gathered on this journey. First stop, [Touch Typing]({{< ref "/posts/ergo/02_touch-typing/index.md" >}})!
 
 ## Related Reading
 Here are several insightful blog posts where software engineers share their experiences with RSI and the strategies they've employed to address this challenge:
