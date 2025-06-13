@@ -8,7 +8,7 @@ series_order: 2
 url: ergo-touch-typing
 ---
 
-# Introduction
+## Introduction
 What's the difference between me and my guitar teacher? Years of experience, a mastery of techniques, and countless hours of practice. If I’m willing to spend hours improving my guitar skills, shouldn’t I do the same for the tools I use every day at work, especially if it can boost my productivity and reduce the risk of health issues?
 
 As mentioned in the [previous article]({{< ref "/posts/ergo/01_why/index.md" >}}), this series focuses on practical techniques you can incorporate into your daily routine to reduce the risk of Repetitive Strain Injury (RSI), while also improving comfort and productivity. Let’s kick things off with Touch Typing.

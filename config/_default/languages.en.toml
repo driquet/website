@@ -19,7 +19,7 @@ image = "img/profile.jpg"
 headline = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
 bio = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
 links = [
-    { envelope = "mailto:d.riquet@gmail.com" },
+    { envelope = "mailto:d.riquet[@]gmail.com" },
     { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
     { linkedin = "https://linkedin.com/in/damien-riquet" },
     { github = "https://github.com/driquet" },

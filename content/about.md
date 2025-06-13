@@ -18,7 +18,7 @@ My current research interests revolve around **Cybersecurity**, **Machine Learni
 
 As **Lead Research Engineer** at **Vade**, I take pride in leading innovative projects that benefit both our customers and the academic community. This includes prototyping new approaches using cutting-edge technologies like Computer Vision, Machine Learning, and NLP. Additionally, I enjoy providing insightful propositions to our customers and actively publishing our work in academic conferences.
 
-I'm always excited to connect with fellow researchers, enthusiasts, and anyone interested in the marvels of research. If you have any questions, collaboration proposals, or just want to say hello, feel free to [reach out](mailto:d.riquet@gmail.com).
+I'm always excited to connect with fellow researchers, enthusiasts, and anyone interested in the marvels of research. If you have any questions, collaboration proposals, or just want to say hello, feel free to [reach out](mailto:d.riquet[@]gmail.com).
 
 ## About me
 Proud father of two, I live near Lille, France. I like spending time with my family, playing disc golf and video games, or finding geocaches. I also like to make jokes and puns.

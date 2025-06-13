@@ -28,7 +28,7 @@ weight = 30
 [[main]]
 identifier = "mail"
 pre = "envelope"
-url = "mailto:d.riquet@gmail.com"
+url = "mailto:d.riquet[@]gmail.com"
 weight = 40
 
 # -- Footer Menu --

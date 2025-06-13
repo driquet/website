@@ -63,3 +63,10 @@ applyFilter = false
 name = 'fragmentrefs'
 type = 'fragments'
 weight = 10
+
+[deployment]
+order = [".jpg$", ".gif$", ".png$"]
+
+[[deployment.targets]]
+name = "deuxfleurs"
+URL = "s3://driquet.info?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
