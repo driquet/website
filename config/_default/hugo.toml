@@ -15,7 +15,7 @@ summaryLength = 0
 buildDrafts = false
 buildFuture = false
 
-googleAnalytics = "G-4PQF5PN90N"
+googleAnalytics = ""
 
 [imaging]
 anchor = 'Center'
@@ -65,8 +65,4 @@ type = 'fragments'
 weight = 10
 
 [deployment]
-order = [".jpg$", ".gif$", ".png$"]
-
-[[deployment.targets]]
-name = "deuxfleurs"
-URL = "s3://driquet.info?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
+order = [".webp$", ".jpg$", ".gif$", ".png$"]

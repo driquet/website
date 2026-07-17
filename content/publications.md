@@ -6,6 +6,9 @@ layout: "simple"
 
 ## Scientific publications
 
+- :uk: 2026 [**DIDECO: An Annotated Dataset for Intent Detection in Digital Communications**](https://hal.science/hal-05616045). Senaid Popovic, **Damien Riquet**, Maxime Meyer, Fabien Lauer, Yannick Parmentier. *LREC 2026 (The 15th biennial Language Resources and Evaluation Conference).*
+- :uk: 2026 [**Adaptive Text Anonymization: Learning Privacy-Utility Trade-offs via Prompt Optimization**](https://aclanthology.org/2026.findings-acl.401/). Gabriel Loiseau, Damien Sileo, **Damien Riquet**, Maxime Meyer, Marc Tommasi. *Findings of the Association for Computational Linguistics: ACL 2026.*
+- :uk: 2026 [**Distilling Human-Aligned Privacy Sensitivity Assessment from Large Language Models**](https://arxiv.org/abs/2603.29497). Gabriel Loiseau, Damien Sileo, **Damien Riquet**, Maxime Meyer, Marc Tommasi. *LEGAL2026 / CALD-pseudo 2026 (Joint Workshop on Legal and Ethical Issues in Human Language Technologies and Computational Approaches to Language Data Pseudonymization, Anonymization, De-identification, and Data Privacy).*
 - :uk: 2025 [**Tau-Eval: A Unified Evaluation Framework for Useful and Private Text Anonymization**](https://arxiv.org/abs/2506.05979). Gabriel Loiseau, Damien Sileo, **Damien Riquet**, Maxime Meyer, Marc Tommasi. *EMNLP 2025 (Conference on Empirical Methods in Natural Language Processing (EMNLP) Demo Track)*.
 - :uk: 2025 [**TAROT: Task-Oriented Authorship Obfuscation Using Policy Optimization Methods**](https://arxiv.org/abs/2407.21630). Gabriel Loiseau, Damien Sileo, **Damien Riquet**, Maxime Meyer, Marc Tommasi. *PrivateNLP 2025 (Sixth Workshop on Privacy in Natural Language Processing)*.
 - :uk: 2024 [**WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection**](https://doi.acm.org?doi=3626232.3653283). Gabriel Loiseau, Valentin Lefils, Maxime Meyer, **Damien Riquet**. *CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).*
