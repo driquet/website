@@ -1,6 +1,6 @@
 # General configuration
 baseURL = 'https://driquet.info/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Damien Riquet'
 theme = "DoIt"
 
@@ -701,15 +701,15 @@ priority = 0.5
 
 # Permalinks config
 [Permalinks]
-# posts = ":year/:month/:filename"
-posts = ":filename"
+# posts = ":year/:month/:contentbasename"
+posts = ":contentbasename"
 
 # Privacy config
 [privacy]
 #  privacy of the Google Analytics (replaced by params.analytics.google)
 [privacy.googleAnalytics]
 # ...
-[privacy.twitter]
+[privacy.x]
 enableDNT = true
 [privacy.youtube]
 privacyEnhanced = true
@@ -732,7 +732,6 @@ home = ["HTML", "RSS"]
 page = ["HTML"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]
-taxonomyTerm = ["HTML"]
 
 # Options for taxonomies
 [taxonomies]

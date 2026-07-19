@@ -1,5 +1,5 @@
-languageCode = "en"
-languageName = "English"
+locale = "en"
+label = "English"
 weight = 1
 title = "Damien Riquet"
 
@@ -15,7 +15,7 @@ dateFormat = "2 January 2006"
 
 [params.author]
 name = "Damien Riquet"
-image = "img/profile.jpg"
+image = "img/profile.webp"
 headline = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
 bio = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
 links = [

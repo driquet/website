@@ -611,3 +611,7 @@ Having successfully applied Eroom-Nitot's law in practice, I'm planning to take 
 - [Renato Pereira](https://r2p.dev/) presents a similarly detailed study in "[One Billion Row Challenge in Golang - From 95s to 1.96s](https://r2p.dev/b/2024-03-18-1brc-go/)". His thorough analysis of I/O operations is particularly enlightening for those looking to optimize file handling.
 - For those interested in PGO, [Yahya SayadArbabi](https://theyahya.com/)'s "[A Deep Look Into Golang Profile-Guided Optimization (PGO)](https://theyahya.com/posts/go-pgo/)" offers a thorough explanation of this powerful feature.
 - Now, if Go had a Mount Olympus, [Dave Cheney](https://dave.cheney.net/) would be sitting right at the top (at least in my book). His "[High Performance Go Workshop](https://dave.cheney.net/high-performance-go)" is the holy grail for performance optimization. Trust me, if you're looking to turbocharge your Go code, this is your pit stop.
+
+## Update (July 2026)
+
+That next blog post took two years to arrive, and I didn't write the code in it. I handed the challenge to an autonomous coding agent with a benchmark and a protocol, and it reached the disk's read floor in 35 minutes: [One Billion Rows, 35 Minutes: Letting an Agent Optimize My Go Code]({{< ref "posts/1brc-autoresearch" >}}).
