@@ -1,0 +1,13 @@
+{{/* Book card: {{< book cover="covers/x.jpg" title="" author="" narrator="" length="" url="" >}}pitch{{< /book >}} */}}
+<div class="book-card">
+  {{ with .Page.Resources.GetMatch (.Get "cover") }}
+    {{ $img := .Resize "240x webp" }}
+    <a href="{{ $.Get "url" }}" target="_blank" rel="noopener"><img src="{{ $img.RelPermalink }}" width="120" height="120" alt="Cover of {{ $.Get "title" }}" loading="lazy"></a>
+  {{ end }}
+  <div>
+    <a class="book-card-title" href="{{ .Get "url" }}" target="_blank" rel="noopener">{{ .Get "title" }}</a>
+    <div class="book-card-meta">{{ .Get "author" }} · narrated by {{ .Get "narrator" }}</div>
+    <span class="book-card-length">{{ .Get "length" }}</span>
+    <div class="book-card-pitch">{{ .Inner | .Page.RenderString }}</div>
+  </div>
+</div>
