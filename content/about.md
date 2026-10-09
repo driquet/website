@@ -10,25 +10,16 @@ showLikes: false
 ---
 
 ## Summary
-Hello, **I'm Damien Riquet**, a Research Engineer with a passion for exploring innovative solutions in Cybersecurity. Welcome to my website, where I'm thrilled to share my journey, projects, and discoveries in the world of research and technology.
+Hello, **I'm Damien Riquet**, **Lead Research Engineer** at **Hornetsecurity** (formerly Vade, now a Proofpoint company), working at the crossroads of **Cybersecurity**, **Machine Learning**, and **Natural Language Processing**.
 
-Since an early age, I've been captivated by the wonders of science and technology, driving me to pursue a career in research to actively contribute to advancements that shape our world. My journey began at the University of Lille, France, where I completed a **PhD on Network Security, Language and Distribution**. After that, I joined **Stormshield**, a network security provider, as kernel developer. Later on, I became part of **Vade**, an email security provider, first as Research Engineer, now as Lead Research Engineer.
+After a **PhD on Network Security** at the University of Lille and two years as a kernel developer at **Stormshield**, I joined Vade in 2017. Today I lead research projects that turn cutting-edge ML, NLP and Computer Vision into email protection, supervise PhD students, and publish our work in academic conferences.
 
-My current research interests revolve around **Cybersecurity**, **Machine Learning**, and **Natural Language Processing**, combining insights from various fields to create meaningful and impactful outcomes.
+Since early 2026, I also lead the **AI Special Interest Group (SIG)** at **M3AAWG**, a forum where industry members tackle how AI both enables and combats online abuse.
 
-As **Lead Research Engineer** at **Vade**, I take pride in leading innovative projects that benefit both our customers and the academic community. This includes prototyping new approaches using cutting-edge technologies like Computer Vision, Machine Learning, and NLP. Additionally, I enjoy providing insightful propositions to our customers and actively publishing our work in academic conferences.
-
-I'm always excited to connect with fellow researchers, enthusiasts, and anyone interested in the marvels of research. If you have any questions, collaboration proposals, or just want to say hello, feel free to [reach out](mailto:d.riquet[@]gmail.com).
+Questions, collaboration ideas, or just want to say hello? Feel free to [reach out](mailto:d.riquet[@]gmail.com).
 
 ## About me
-Proud father of two, I live near Lille, France. I like spending time with my family, playing disc golf and video games, or finding geocaches. I also like to make jokes and puns.
-
-I love computer science and cybersecurity. While my go-to languages are Golang and C, I'm learning Rust at the moment. I am a quick learner and always up for a good challenge.
-
-
-Outside of work, I'm actively involved in various pursuits. Since 2015, I have served as a geocaching reviewer, and I currently sit on the board of my children's kindergarten association.
-
-Curiosity best describes me: I have a voracious appetite for knowledge, often immersing myself in articles, GitHub repositories, and educational videos to understand diverse subjects.
+Proud father of two, I live near Lille, France. I enjoy disc golf, video games, geocaching (I've been a geocaching reviewer since 2015), and a good pun. Curious by nature, I'm always digging into articles, GitHub repositories and videos; my go-to languages are Golang and C, and I'm currently learning Rust.
 
 ## Main skills
 
@@ -57,7 +48,19 @@ Curiosity best describes me: I have a voracious appetite for knowledge, often im
 ## Experience
 {{< timeline >}}
 
-{{< timelineItem icon="shield" header="Lead Research Engineer" badge="2022 - Present" subheader="Vade (acquired by Hornetsecurity in 2024)" >}}
+{{< timelineItem icon="lightbulb" header="AI Special Interest Group (SIG) Leader" badge="2026 - Present" subheader="M3AAWG" >}}
+
+The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG) is where the industry comes together to work against bots, malware, spam, viruses, DoS attacks and other online exploitation. In parallel with my role at Hornetsecurity, I lead its Artificial Intelligence SIG:
+
+<ul>
+    <li>Providing a forum for members to share insights on the evolving role of AI in enabling and combating abuse.</li>
+    <li>Identifying gaps where collaboration or initiatives can improve outcomes, and contributing expertise to initiatives supported by Priority Committees.</li>
+    <li>Focus areas: AI-generated phishing and scams, synthetic identities, automated content and abuse at scale, defensive applications of AI.</li>
+</ul>
+
+{{< /timelineItem >}}
+
+{{< timelineItem icon="shield" header="Lead Research Engineer" badge="2022 - Present" subheader="Hornetsecurity (formerly Vade), a Proofpoint company" >}}
 
 In addition to my previous responsibilities (see below), I was given the opportunity to act as Lead Research Engineer.
 
