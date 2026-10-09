@@ -1,7 +1,7 @@
 ---
 title: "From Restarts to Resilience: Fixing Memory Overload in Go’s Image Service"
 date: 2024-11-20T12:34:56+02:00
-tags: ["golang", "crash", "memory", "image"]
+tags: ["golang", "crash", "memory", "image", "deep dive"]
 showTableOfContents: true
 ---
 

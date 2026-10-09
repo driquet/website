@@ -1,7 +1,7 @@
 ---
 title: "One Billion Rows, 35 Minutes: Letting an Agent Optimize My Go Code"
 date: 2026-07-19T10:30:00+02:00
-tags: ["challenge", "golang", "optimization", "performance", "ai", "coding-agents"]
+tags: ["challenge", "golang", "optimization", "performance", "ai", "coding-agents", "deep dive"]
 showTableOfContents: true
 draft: false
 ---
