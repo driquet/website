@@ -1,7 +1,7 @@
 ---
 title: "Crack the Stack: Introducing Tricky Bits"
 date: 2026-06-30T09:00:00+02:00
-tags: ["challenge", "ctf", "osint", "side project"]
+tags: ["Challenge", "CTF", "OSINT", "Side Project"]
 draft: false
 ---
 

@@ -10,19 +10,17 @@ rtl = false
 dateFormat = "2 January 2006"
 # logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
-# description = "My awesome website"
+description = "Damien Riquet: Lead Research Engineer at Hornetsecurity, a Proofpoint company. ML & NLP for email security; writing about research, Go, and side projects."
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
 name = "Damien Riquet"
 image = "img/profile.webp"
-headline = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
-bio = "PhD | Lead Research Engineer at Vade / Hornetsecurity"
+headline = "Lead Research Engineer at Hornetsecurity, a Proofpoint company.<br>ML & NLP for email security; writing about research, Go, and side projects."
+bio = "Lead Research Engineer at Hornetsecurity, a Proofpoint company.<br>ML & NLP for email security; writing about research, Go, and side projects."
 links = [
-    { envelope = "mailto:d.riquet[@]gmail.com" },
+    { envelope = "mailto:d.riquet@gmail.com" },
     { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
     { linkedin = "https://linkedin.com/in/damien-riquet" },
     { github = "https://github.com/driquet" },
-    { twitter = "https://twitter.com/driquet" },
-    { bluesky = "https://bsky.app/profile/driquet.info" },
 ]

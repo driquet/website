@@ -20,6 +20,7 @@ disableTextInHeader = false
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultSocialImage = "img/profile.webp"
 
 # highlightCurrentMenuArea = true
 smartTOC = true

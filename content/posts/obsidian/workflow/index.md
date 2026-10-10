@@ -3,7 +3,7 @@ title: "How Obsidian transformed my daily and weekly routines"
 date: 2024-05-07T10:29:11+02:00
 draft: false
 showTableOfContents: true
-tags: ["obsidian", "template"]
+tags: ["Obsidian", "Template"]
 series: ["Obsidian"]
 series_order: 1
 ---

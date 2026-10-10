@@ -1,7 +1,7 @@
 ---
 title: "Advent of Code 2024: Late Nights, Debugging, and \"Why Is This So Slow?\""
 date: 2024-12-26T09:01:21+01:00
-tags: ["coding", "challenge", "golang", "advent of code"]
+tags: ["Coding", "Challenge", "Golang", "Advent of Code"]
 showTableOfContents: true
 ---
 

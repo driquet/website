@@ -1,13 +1,13 @@
 ---
 title: "From Restarts to Resilience: Fixing Memory Overload in Go’s Image Service"
 date: 2024-11-20T12:34:56+02:00
-tags: ["golang", "crash", "memory", "image", "deep dive"]
+tags: ["Golang", "Crash", "Memory", "Image", "Deep Dive"]
 showTableOfContents: true
 ---
 
 ## Introduction
 
-Cyberattacks are highly opportunistic, exploiting any available vector to infiltrate and deliver their threats. One surprising attack surface? Images. Malicious actors often craft images specifically designed to slip past security solutions, knowing that processing them can be resource-intensive. Several years ago, at Vade, I began working on Computer Vision components to combat this, developing tools capable of detecting threats hidden in images. One such tool was RIANA, which at its peak was blocking up to [500 million spam emails over a 90-day period](https://www.vadesecure.com/en/blog/an-update-on-logo-detection-technology).
+Cyberattacks are highly opportunistic, exploiting any available vector to infiltrate and deliver their threats. One surprising attack surface? Images. Malicious actors often craft images specifically designed to slip past security solutions, knowing that processing them can be resource-intensive. Several years ago, at Vade, I began working on Computer Vision components to combat this, developing tools capable of detecting threats hidden in images. One such tool was RIANA, which at its peak was blocking up to [500 million spam emails over a 90-day period](https://web.archive.org/web/20220124013412/https://www.vadesecure.com/en/blog/an-update-on-logo-detection-technology).
 
 As with much of our work at Vade, these components are developed in Go, and along the way, we noticed a recurring problem: our image-handling services were regularly crashing due to high memory consumption. In this article, I’ll walk you through the reasons behind these crashes, how we could diagnose them, and the possible solutions to implement to keep things running smoothly (and prevent our services from taking unplanned naps).
 

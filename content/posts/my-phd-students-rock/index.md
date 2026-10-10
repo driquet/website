@@ -1,7 +1,7 @@
 ---
 title: "My PhD Students Rock: Three New Publications"
 date: 2026-06-30T08:00:00+02:00
-tags: ["publication", "privacy-utility trade-off", "anonymization", "intent-detection", "phishing"]
+tags: ["Publication", "Privacy-Utility Trade-off", "Anonymization", "Intent Detection", "Phishing"]
 ---
 
 It's been a remarkable few months, and I couldn't be prouder of my PhD students. Their hard work has paid off with **three new publications** spanning text anonymization, privacy evaluation, and intent detection in digital communications. Huge congratulations to **Gabriel Loiseau** and **Senaid Popovic**: this one is for you. 🎉

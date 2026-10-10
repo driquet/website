@@ -1,7 +1,7 @@
 ---
 title: "Taming the Flow: Throttling in Golang with Semaphore Magic"
 date: 2024-02-27T00:00:00+02:00
-tags: ["golang", "throttling", "rate limiting"]
+tags: ["Golang", "Throttling", "Rate Limiting"]
 showTableOfContents: true
 ---
 

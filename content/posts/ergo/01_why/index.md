@@ -1,7 +1,7 @@
 ---
 title: "The Case for Ergonomics: Why Your Workspace Matters"
 date: 2025-01-24T00:00:00+01:00
-tags: ["ergonomics", "Repetitive Strain Injury"]
+tags: ["Ergonomics", "Repetitive Strain Injury"]
 showTableOfContents: true
 series: ["Ergonomics for the Modern Worker"]
 series_order: 1

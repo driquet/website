@@ -1,7 +1,7 @@
 ---
 title: "Excuses to Listen: How Audiobooks Rebuilt My Routine"
 date: 2026-10-09T09:00:00+02:00
-tags: ["audiobooks", "books", "litrpg", "habits", "running"]
+tags: ["Audiobooks", "Books", "LitRPG", "Habits", "Running"]
 showTableOfContents: true
 ---
 

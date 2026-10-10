@@ -1,7 +1,7 @@
 ---
 title: "Touch Typing: The Secret to Efficient and Pain-Free Typing"
 date: 2025-01-30T01:00:00+01:00
-tags: ["ergonomics", "keyboard"]
+tags: ["Ergonomics", "Keyboard"]
 showTableOfContents: true
 series: ["Ergonomics for the Modern Worker"]
 series_order: 2

@@ -5,6 +5,9 @@
 theme = ["blowfish", "hugo-cite"]
 baseURL = "https://driquet.info/"
 defaultContentLanguage = "en"
+enableEmoji = true
+enableGitInfo = true
+capitalizeListTitles = false
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
@@ -66,3 +69,12 @@ weight = 10
 
 [deployment]
 order = [".webp$", ".jpg$", ".gif$", ".png$"]
+
+[permalinks]
+posts = ":contentbasename"
+
+[privacy]
+[privacy.x]
+enableDNT = true
+[privacy.youtube]
+privacyEnhanced = true

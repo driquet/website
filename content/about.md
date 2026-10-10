@@ -10,16 +10,16 @@ showLikes: false
 ---
 
 ## Summary
-Hello, **I'm Damien Riquet**, **Lead Research Engineer** at **Hornetsecurity** (formerly Vade, now a Proofpoint company), working at the crossroads of **Cybersecurity**, **Machine Learning**, and **Natural Language Processing**.
+Hello, **I'm Damien Riquet**, **Lead Research Engineer** at **Hornetsecurity** (formerly Vade), a Proofpoint company, working at the crossroads of **Cybersecurity**, **Machine Learning**, and **Natural Language Processing**.
 
 After a **PhD on Network Security** at the University of Lille and two years as a kernel developer at **Stormshield**, I joined Vade in 2017. Today I lead research projects that turn cutting-edge ML, NLP and Computer Vision into email protection, supervise PhD students, and publish our work in academic conferences.
 
 Since early 2026, I also lead the **AI Special Interest Group (SIG)** at **M3AAWG**, a forum where industry members tackle how AI both enables and combats online abuse.
 
-Questions, collaboration ideas, or just want to say hello? Feel free to [reach out](mailto:d.riquet[@]gmail.com).
+Questions, collaboration ideas, or just want to say hello? Feel free to [reach out](mailto:d.riquet@gmail.com).
 
 ## About me
-Proud father of two, I live near Lille, France. I enjoy disc golf, video games, geocaching (I've been a geocaching reviewer since 2015), and a good pun. Curious by nature, I'm always digging into articles, GitHub repositories and videos; my go-to languages are Golang and C, and I'm currently learning Rust.
+Proud father of two, I live near Lille, France. I enjoy disc golf, video games, geocaching (I've been a geocaching reviewer since 2015), and a good pun. Curious by nature, I'm always digging into articles, GitHub repositories and videos; my go-to languages are Golang and C.
 
 ## Main skills
 
@@ -62,15 +62,17 @@ The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG) is where the
 
 {{< timelineItem icon="shield" header="Lead Research Engineer" badge="2022 - Present" subheader="Hornetsecurity (formerly Vade), a Proofpoint company" >}}
 
-In addition to my previous responsibilities (see below), I was given the opportunity to act as Lead Research Engineer.
+I lead research projects that bring Machine Learning, NLP and Computer Vision into production email protection, from the first experiment to the deployed detector.
 
 <ul>
-    <li>Leading an NLP-oriented project aimed at detecting unsolicited textual emails, such as spear-phishing or cold emails.</li>
-    <li>Supervising PhD students and collaborating with public Research laboratories:</li>
+    <li>Leading an NLP project that detects unsolicited textual emails, such as spear-phishing, Business Email Compromise and cold emails.</li>
+    <li>Supervising two PhD students in partnership with public research laboratories, and publishing our work at venues such as ACL, EMNLP, LREC and CODASPY:</li>
     <ul>
         <li><a href="https://gabrielloiseau.github.io/">Gabriel Loiseau</a>: Privacy and Utility-Preserving Transfer Learning for Text Anonymization.</li>
         <li>Senaid Popovic: Intent detection in textual content.</li>
     </ul>
+    <li>Presenting our research to the anti-abuse industry at M3AAWG General Meetings (LLM security, AI agents, LLM optimization).</li>
+    <li>Continuing to mentor engineers, review code and shape engineering practices across the team.</li>
 </ul>
 
 {{< /timelineItem >}}
@@ -110,8 +112,8 @@ Stormshield, a leading French cybersecurity firm, is specialized in network, wor
 Network security study focused on Cloud Computing, using a passive approach.
 
 <ul>
-    <li>Proposition of a distributed architecture of intrusion detection systems and a dedicated language to describe a set of security rules.</li>
-    <li>Functional solution implemented in Python and C (~20.000 lines of code) including an intrusion detection system, a compiler and several modules.</li>
+    <li>Proposal of a distributed architecture of intrusion detection systems and a dedicated language to describe a set of security rules.</li>
+    <li>Functional solution implemented in Python and C (~20,000 lines of code) including an intrusion detection system, a compiler and several modules.</li>
     <li>Position poster presented at Eurosys 2012, Bern, Switzerland.</li>
     <li>Publication of three peer-reviewed articles.</li>
     <li>PhD Thesis: <b>Discus : Une architecture de détection d’intrusions réseau distribuée basée sur un langage dédié</b></li>
@@ -126,22 +128,6 @@ Network security study focused on Cloud Computing, using a passive approach.
     <li>Two main themes: System programming (memory allocation, process management, signals, debugging) and Networking (OSI layer, TCP/UDP protocols, routing and network equipment configuration).</li>
     <li>Supervision of internships and student projects.</li>
 </ul>
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="graduation-cap" header="Research Internship" badge="2011 (6 months)" subheader="2XS Team, LIFL, University of Lille" >}}
-
-Study of the impact of distributed attacks on the Cloud Computing:
-<ul>
-    <li>State of the art on network distributed attacks.</li>
-    <li>Large-scale experiments based on port scanning, with various numbers of machines and network security solutions.</li>
-</ul>
-
-{{< /timelineItem >}}
-
-{{< timelineItem icon="graduation-cap" header="Internship" badge="2010 (4 months)" subheader="POPS Team, LIFL, University of Lille" >}}
-
-Improvement of STAN, a static analysis tool able to enforce control flow policies for Java bytecode, tailored for use in open and constrained devices like credit cards.
 
 {{< /timelineItem >}}
 

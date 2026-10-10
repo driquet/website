@@ -1,7 +1,7 @@
 ---
 title: "Stop Setting Goals, Start Building Systems"
 date: 2026-01-09T00:00:00+01:00
-tags: ["habits", "psychology", "behavior change", "personal experience"]
+tags: ["Habits", "Psychology", "Behavior Change", "Personal Experience"]
 showTableOfContents: true
 url: new-years-resolution
 ---

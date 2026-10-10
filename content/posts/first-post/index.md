@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2023-09-29T13:32:01+02:00
-tags: ["hello"]
+tags: ["Hello"]
 toc:
   enable: false
 ---

@@ -7,6 +7,10 @@ unsafe = true
 
 [highlight]
 noClasses = false
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
 
 [tableOfContents]
 startLevel = 2
