@@ -101,3 +101,44 @@
 @media (max-width: 480px) {
   .book-card > a { flex-basis: 80px; }
 }
+
+/* Card grids (stat cards, comparison cards), usable in any post:
+   <div class="card-grid"><div class="card card-blue">
+   <p class="card-kicker">..</p><p class="card-big">..</p><p>..</p></div></div> */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0;
+}
+/* Two columns, for cards with more text: <div class="card-grid card-grid-2"> */
+.card-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 480px) {
+  .card-grid-2 { grid-template-columns: 1fr; }
+}
+.card {
+  --c: #2a78d6;
+  border: 1px solid rgba(137, 135, 129, 0.3);
+  border-top: 4px solid var(--c);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  background: rgba(137, 135, 129, 0.07);
+  text-align: left;
+}
+.prose .card p { margin: 0.3rem 0; font-size: 0.9rem; line-height: 1.45; }
+.prose .card .card-kicker {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.7; margin: 0;
+}
+.prose .card .card-big {
+  font-size: 2rem; font-weight: 800; line-height: 1.15; margin: 0.2rem 0; color: var(--c);
+}
+.prose .card .card-title { font-weight: 700; font-size: 1rem; margin: 0.15rem 0; }
+.card.card-grey { --c: #898781; }
+.card.card-blue { --c: #2a78d6; }
+.card.card-green { --c: #1baf7a; }
+.card.card-orange { --c: #eb6834; }
+.card.card-purple { --c: #7c4dcc; }
+.dark .card.card-blue { --c: #3987e5; }
+.dark .card.card-green { --c: #199e70; }
+.dark .card.card-orange { --c: #d95926; }
+.dark .card.card-purple { --c: #a77fe0; }
