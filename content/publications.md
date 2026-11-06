@@ -20,18 +20,7 @@ layout: "simple"
 - :fr: 2012 [**Etude de l'impact des attaques distribuées et multi-chemins sur les solutions de sécurité réseaux**](https://hal.science/hal-00746991/). **Damien Riquet**, Gilles Grimaud, Michaël Hauspie. *MAnifestation des JEunes Chercheurs en Sciences et Technologies de l'Information et de la Communication, Lille, France.*
 - :uk: 2012 [**Large-Scale Coordinated Attacks: Impact on the Cloud Security**](https://ieeexplore.ieee.org/abstract/document/6296915). **Damien Riquet**, Gilles Grimaud, Michaël Hauspie. *Sixth International Conference on Innovative Mobile and Internet Services in Ubiquitous Computing, Palermo, Italy.*
 
-## Others
-
-### Talks
-
-- :uk: 2026 **LLM Optimization in Practice: Better Results Without Fine-Tuning or Wasting Tokens**. The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG 68th General Meeting, Paris, France). *Upcoming.*
-- :uk: 2026 **Breaking and Securing AI Agents Training: A Practical Exploration of Agent Exploits and Defenses**. The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG 66th General Meeting, San Diego, USA).
-- :uk: 2025 **Breaking and Securing LLMs: Understanding Information Leakage Risks and Defenses**. The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG 64th General Meeting, Vancouver, Canada).
-- :uk: 2021 **Detecting Malicious Images in Email with Computer Vision**. The Messaging, Malware and Mobile Anti-Abuse Working Group (M3AAWG 52nd General Meeting, online).
-- :fr: 2017 **Ergonomie du poste de travail**. [:link:](https://driquet.github.io/ergo-bepo/#/)
-- :fr: 2017 **High availability at kernel-level in the Stormshield Network Security firewall**. ComPAS : conférence en parallélisme, architecture et systèmes.
-
-### Work related publications
+## Work related publications
 
 - :uk: 2025 **Detection of Cyberthreats with Computer Vision (Part 3)**. Hornetsecurity. [:link:](https://www.hornetsecurity.com/en/blog/detect-cyberthreats-with-computer-vision-3/)
 - :uk: 2025 **Detection of Cyberthreats with Computer Vision (Part 2)**. Hornetsecurity. [:link:](https://www.hornetsecurity.com/en/blog/detect-cyberthreats-with-computer-vision-2/)
