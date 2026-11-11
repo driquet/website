@@ -23,4 +23,5 @@ links = [
     { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
     { linkedin = "https://linkedin.com/in/damien-riquet" },
     { github = "https://github.com/driquet" },
+    { rss = "/index.xml" },
 ]

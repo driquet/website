@@ -18,7 +18,8 @@ enableCodeCopy = true
 disableImageOptimization = true
 disableTextInHeader = false
 
-# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
+defaultBackgroundImage = "img/aurora-constellation.svg"
+backgroundCanvas = true # fixed animated backdrop on every page
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 defaultSocialImage = "img/profile.webp"
 
@@ -48,6 +49,7 @@ cardViewScreenWidth = false
 layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
+showReadingProgress = true
 showDate = true
 showViews = true
 showLikes = true
@@ -79,6 +81,7 @@ showWordCount = true
 showZenMode = false
 
 [list]
+featureImageHover = true
 showHero = true
 heroStyle = "background"           # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true        # only used when heroStyle equals background or thumbAndBackground
