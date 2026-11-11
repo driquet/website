@@ -142,3 +142,21 @@
 .dark .card.card-green { --c: #199e70; }
 .dark .card.card-orange { --c: #d95926; }
 .dark .card.card-purple { --c: #a77fe0; }
+
+/* Publication/talk entries (shortcode entry); badge colors come from the Blowfish scheme */
+.prose .entry { margin: 0 0 1.2rem; }
+.prose .entry-title { font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
+.prose .entry-tag { opacity: 0.6; font-weight: 500; margin-right: 0.25rem; }
+.prose .entry-meta { font-size: 0.85rem; opacity: 0.85; margin-top: 0.2rem; }
+.prose .entry-oneliner { font-size: 0.8rem; opacity: 0.75; margin-top: 0.15rem; }
+.prose .badge {
+  --b: var(--color-neutral-500);
+  display: inline-block; padding: 0.05em 0.55em; margin-right: 0.3rem; border-radius: 9999px;
+  font-size: 0.72rem; font-weight: 700; vertical-align: 0.05em;
+  color: rgb(var(--b)); background: rgba(var(--b), 0.15); border: 1px solid rgba(var(--b), 0.4);
+}
+.prose .badge-conference, .prose .badge-talk { --b: var(--color-primary-500); }
+.prose .badge-workshop, .prose .badge-demo, .prose .badge-journal { --b: var(--color-secondary-500); }
+.dark .prose .badge { --b: var(--color-neutral-300); }
+.dark .prose .badge-conference, .dark .prose .badge-talk { --b: var(--color-primary-300); }
+.dark .prose .badge-workshop, .dark .prose .badge-demo, .dark .prose .badge-journal { --b: var(--color-secondary-300); }

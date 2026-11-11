@@ -1,0 +1,21 @@
+{{/* Publication/talk entry:
+  {{< entry tag="ACL26" type="Conference" url="" title="" authors="" venue="" year="" where="" lang="fr" >}}
+  type picks badge color (see custom.css .badge-*). "Damien Riquet" in authors gets underlined. */}}
+{{ $type := .Get "type" | default "Talk" }}
+<div class="entry">
+  <div class="entry-title">
+    {{ with .Get "tag" }}<span class="entry-tag">[{{ . }}]</span>{{ end }}
+    {{ with .Get "url" }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $.Get "title" }}</a>{{ else }}{{ .Get "title" }}{{ end }}
+    {{ if eq (.Get "lang") "fr" }}<span title="In French">🇫🇷</span>{{ end }}
+  </div>
+  <div class="entry-meta">
+    <span class="badge badge-{{ lower $type }}">{{ $type }}</span>
+    {{ $parts := slice }}
+    {{ with .Get "authors" }}{{ $parts = $parts | append (replace . "Damien Riquet" "<u>Damien Riquet</u>") }}{{ end }}
+    {{ with .Get "venue" }}{{ $parts = $parts | append (printf "<i>%s</i>" .) }}{{ end }}
+    {{ with .Get "where" }}{{ $parts = $parts | append . }}{{ end }}
+    {{ with .Get "year" }}{{ $parts = $parts | append . }}{{ end }}
+    {{ delimit $parts ", " | safeHTML }}
+  </div>
+  {{ with .Get "oneliner" }}<div class="entry-oneliner"><b>One-liner:</b> {{ . | $.Page.RenderString }}</div>{{ end }}
+</div>
