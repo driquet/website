@@ -143,6 +143,17 @@
 .dark .card.card-orange { --c: #d95926; }
 .dark .card.card-purple { --c: #a77fe0; }
 
+/* Score cells by gap to the best score of the task: a <= 2 points, b <= 6, c <= 15, d > 15 */
+span.f1 { display: inline-block; min-width: 3.2em; padding: 0.05em 0.4em; border-radius: 4px; text-align: center; }
+.f1-a { background: rgba(27, 175, 122, 0.65); }
+.f1-b { background: rgba(150, 190, 40, 0.40); } /* yellow-green, between .f1-a and .f1-c */
+.f1-c { background: rgba(212, 167, 44, 0.35); }
+.f1-d { background: rgba(235, 104, 52, 0.40); }
+.f1-ref { background: rgba(137, 135, 129, 0.25); font-weight: 600; } /* the reference value the others are compared with */
+
+/* Table with row blocks: <table class="grouped"><tbody>..</tbody><tbody>..</tbody></table>, a double line between blocks */
+.prose table.grouped tbody + tbody tr:first-child td { border-top: 3px double #898781; }
+
 /* Publication/talk entries (shortcode entry); badge colors come from the Blowfish scheme */
 .prose .entry { margin: 0 0 1.2rem; }
 .prose .entry-title { font-weight: 600; font-size: 1.05rem; line-height: 1.35; }
@@ -160,3 +171,18 @@
 .dark .prose .badge { --b: var(--color-neutral-300); }
 .dark .prose .badge-conference, .dark .prose .badge-talk { --b: var(--color-primary-300); }
 .dark .prose .badge-workshop, .dark .prose .badge-demo, .dark .prose .badge-journal { --b: var(--color-secondary-300); }
+
+/* Tables: centered at their natural width. The theme makes tables display:block (horizontal scroll),
+   so width:auto would still fill the line; fit-content shrinks the box, max-width keeps the scroll on phones. */
+.prose table { width: fit-content; max-width: 100%; margin-left: auto; margin-right: auto; }
+
+/* Caption: <p class="caption"> right after a table or a chart */
+.prose p.caption {
+  max-width: 38rem; margin: 0.75rem auto 2rem; text-align: center;
+  font-size: 0.8rem; line-height: 1.5; opacity: 0.75;
+}
+.prose table + p.caption { margin-top: -1.25rem; } /* pull it up into the table's 2em bottom margin */
+
+/* Inline SVG figure: <figure class="svg-figure"><svg>..</svg></figure>, text follows the theme color */
+.prose figure.svg-figure { max-width: 34rem; margin: 2rem auto 0; }
+.prose figure.svg-figure svg { width: 100%; height: auto; color: inherit; }

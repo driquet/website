@@ -3,6 +3,8 @@ title: "Do You Need an LLM for That? Classifying Text Locally"
 date: 2026-11-01T10:00:00+01:00
 tags: ["AI", "LLM", "Classification", "Benchmark"]
 showTableOfContents: true
+series: ["Classifying Text Locally"]
+series_order: 1
 ---
 
 <!-- Results: run of 2026-10-30/31 (experiments/do-you-need-an-llm/results/results.csv, 129 runs), Decision Index 0.4.1 (data of 2026-10-29). Part 2: /how-small-can-a-classifier-be/. -->
@@ -579,19 +581,70 @@ options: {
 
 Well, it depends! Three tasks on one laptop are three data points, not a law. Your task, your labels and your hardware will change these numbers. So my best advice is to run the same kind of benchmark on your own data. A few hundred labeled examples for testing and an afternoon are enough to compare TF-IDF, a fine-tuned encoder and a prompt. It will tell you more than any rule of thumb, including this one. TF-IDF also tells you what kind of task you have. Close to the others: the words give the answer away. Near chance: the answer is in a relation. Above chance but far behind: the words may be misleading. With that said, here is how I would start:
 
-{{< mermaid >}}
-flowchart TD
-  A(["Do you have<br/>labeled data?"])
-  A -->|"No"| B(["Tight latency or<br/>deployment constraints?"])
-  A -->|"Yes"| C(["Tight latency or<br/>deployment constraints?"])
-  B -->|"No"| P1["Decision model<br/>or LLM prompt"]
-  B -->|"Yes"| D["Label with a large LLM,<br/>distill into TF-IDF<br/>or an encoder"]
-  C -->|"Yes"| S["TF-IDF or a<br/>fine-tuned encoder"]
-  C -->|"No"| T(["What does<br/>the task look like?"])
-  T -->|"Words give<br/>it away"| TF["TF-IDF, or an<br/>encoder for a few<br/>more points"]
-  T -->|"Answer in<br/>a relation"| E["Encoder with thousands<br/>of labels, decision<br/>model with fewer"]
-  T -->|"Words<br/>mislead"| P2["Encoder or LLM prompt:<br/>a tie, the encoder<br/>is cheaper to run"]
-{{< /mermaid >}}
+<figure class="svg-figure">
+<svg viewBox="0 0 600 442" role="img" aria-label="Decision tree. Do you have labeled data? Without labels: with no tight constraints, a decision model or an LLM prompt; with tight constraints, label with an LLM and distill into TF-IDF or an encoder. With labels: with tight constraints, TF-IDF or a fine-tuned encoder; otherwise it depends on the task: TF-IDF when the words give it away, an encoder with thousands of labels when the answer is in a relation, encoder or prompt when the words mislead.">
+  <defs>
+    <marker id="dl-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+  </defs>
+  <g fill="currentColor" font-family="inherit" text-anchor="middle">
+    <!-- root -->
+    <rect x="190" y="6" width="220" height="48" rx="24" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="300" y="35" font-size="15" font-weight="700">Do you have labeled data?</text>
+    <path d="M300,54 V76 H135 V100" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <path d="M300,76 H455 V100" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <text x="215" y="70" font-size="13" opacity="0.85">no</text>
+    <text x="380" y="70" font-size="13" opacity="0.85">yes</text>
+    <!-- level 1 -->
+    <rect x="20" y="104" width="230" height="56" rx="28" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="135" y="127" font-size="14" font-weight="700">Tight latency or</text>
+    <text x="135" y="146" font-size="14" font-weight="700">deployment constraints?</text>
+    <rect x="330" y="104" width="250" height="56" rx="28" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="455" y="127" font-size="14" font-weight="700">Tight latency or</text>
+    <text x="455" y="146" font-size="14" font-weight="700">deployment constraints?</text>
+    <path d="M135,160 V186 H67 V210" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <path d="M135,186 H212 V210" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <text x="98" y="180" font-size="13" opacity="0.85">no</text>
+    <text x="176" y="180" font-size="13" opacity="0.85">yes</text>
+    <path d="M455,160 V186 H372 V210" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <path d="M455,186 H520 V210" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <text x="411" y="180" font-size="13" opacity="0.85">yes</text>
+    <text x="490" y="180" font-size="13" opacity="0.85">no</text>
+    <!-- level 2 -->
+    <rect x="10" y="214" width="115" height="66" rx="12" fill="#7c4dcc" fill-opacity="0.22" stroke="#9a6fe3" stroke-width="2"/>
+    <text x="67" y="243" font-size="13" font-weight="700">Decision model</text>
+    <text x="67" y="261" font-size="13" font-weight="700">or LLM prompt</text>
+    <rect x="135" y="214" width="155" height="66" rx="12" fill="#2a78d6" fill-opacity="0.25" stroke="#3987e5" stroke-width="2"/>
+    <text x="212" y="236" font-size="13" font-weight="700">Label with an LLM,</text>
+    <text x="212" y="253" font-size="13" opacity="0.85">distill into TF-IDF</text>
+    <text x="212" y="270" font-size="13" opacity="0.85">or an encoder</text>
+    <rect x="305" y="214" width="135" height="66" rx="12" fill="#2a78d6" fill-opacity="0.25" stroke="#3987e5" stroke-width="2"/>
+    <text x="372" y="243" font-size="13" font-weight="700">TF-IDF or a</text>
+    <text x="372" y="261" font-size="13" font-weight="700">fine-tuned encoder</text>
+    <rect x="450" y="214" width="140" height="66" rx="28" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="520" y="243" font-size="14" font-weight="700">What does the</text>
+    <text x="520" y="261" font-size="14" font-weight="700">task look like?</text>
+    <path d="M520,280 V316 H110 V342" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <path d="M300,316 V342" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <path d="M495,316 V342" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#dl-arrow)"/>
+    <!-- level 3 -->
+    <rect x="20" y="346" width="180" height="90" rx="12" fill="#898781" fill-opacity="0.22" stroke="#898781" stroke-width="2"/>
+    <text x="110" y="368" font-size="11" font-weight="700" letter-spacing="1" opacity="0.7">WORDS GIVE IT AWAY</text>
+    <text x="110" y="390" font-size="13" font-weight="700">TF-IDF, or an</text>
+    <text x="110" y="407" font-size="13" opacity="0.85">encoder for a few</text>
+    <text x="110" y="424" font-size="13" opacity="0.85">more points</text>
+    <rect x="210" y="346" width="180" height="90" rx="12" fill="#2a78d6" fill-opacity="0.25" stroke="#3987e5" stroke-width="2"/>
+    <text x="300" y="368" font-size="11" font-weight="700" letter-spacing="1" opacity="0.7">ANSWER IN A RELATION</text>
+    <text x="300" y="390" font-size="13" font-weight="700">Encoder with thousands</text>
+    <text x="300" y="407" font-size="13" opacity="0.85">of labels, decision</text>
+    <text x="300" y="424" font-size="13" opacity="0.85">model with fewer</text>
+    <rect x="400" y="346" width="190" height="90" rx="12" fill="#eb6834" fill-opacity="0.22" stroke="#eb6834" stroke-width="2"/>
+    <text x="495" y="368" font-size="11" font-weight="700" letter-spacing="1" opacity="0.7">WORDS MISLEAD</text>
+    <text x="495" y="390" font-size="13" font-weight="700">Encoder or LLM prompt:</text>
+    <text x="495" y="407" font-size="13" opacity="0.85">a tie, the encoder</text>
+    <text x="495" y="424" font-size="13" opacity="0.85">is cheaper to run</text>
+  </g>
+</svg>
+</figure>
 
 - **No labels, no hard constraints:** use something already trained. Try a decision model if one fits your task and your hardware: OneJev1.6-4B beat everything I trained on CLINC and VAST. But on DynaSent, the only task neither in its training data nor on the index, a plain zero-shot prompt did as well, so try both. A generic prompt gets worse with more classes, and a few random examples won't fix it: they helped on small intent sets, but on none of the full tasks.
 - **No labels, but tight constraints:** a 4B model is out, so you need labels from somewhere. The practical way is to let a larger LLM label a few thousand of your texts, then train a small model on them (a teacher and a student, or distillation). I didn't test it, and the student will copy the teacher's mistakes. But the learning curves give an idea of how much to label: a few dozen per class for intents, thousands for stance.
@@ -613,7 +666,7 @@ As I said at the start, this is a weekend project. It was never meant to be pape
 
 ## What's next
 
-- **How small can a classifier be?** The encoder side: from 17M to 150M parameters, how many labels each size needs, CPU or GPU. Quantization too, for the encoders and the 4B models alike, so the cost comparison is fair. And how they compare with ready-made models that need no labels or only a few (sentence embeddings with a logistic regression, SetFit).
+- **[How small can a classifier be?]({{< ref "/posts/how-small-can-a-classifier-be" >}})** The encoder side: from 17M to 150M parameters, how many labels each size needs, CPU or GPU. Quantization too, for the encoders and the 4B models alike, so the cost comparison is fair. And how they compare with ready-made models that need no labels or only a few (sentence embeddings with a logistic regression, SetFit).
 - **Fine-tune or optimize the prompt?** Same tasks: plain vs. GEPA-optimized prompt, base vs. LoRA weights.
 - **No labels, but an encoder anyway?** A large LLM labels the training set, then a small encoder is fine-tuned on its answers (a teacher and a student). How close does the student get, how many labels does it need, and what does it cost?
 
