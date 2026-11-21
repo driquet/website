@@ -68,7 +68,7 @@ Unless you work at one of the biggest tech companies, you can't serve the bigges
 
 **Try it on your own task.** These are three tasks on one laptop, not a law. Your texts, your labels and your machine will move the numbers. Even with a decision model, label a few hundred texts as a test set (more with many classes, so that each one shows up), and run the same comparison before you commit: [the code is public](https://github.com/driquet/local-classification).
 
-**And what if you could have both?** A big decision model labels your texts, and a small encoder learns from them: as much of the first's quality as it can keep, at the cost of the second. That's distillation, and the next post.
+**And what if you could have both?** A big decision model labels your texts, and a small encoder learns from them: as much of the first's quality as it can keep, at the cost of the second. That's distillation, and [the next post](/distilling-a-classifier/).
 
 ## The contestants
 
@@ -723,7 +723,7 @@ I didn't batch TF-IDF, already under a millisecond per text, or the decision mod
 
 ## What's next
 
-- **Distillation.** A decision model labels the training set, a small encoder learns from it: no labels from you, and the serving cost of a fine-tuned encoder. That's the next post.
+- **Distillation.** A decision model labels the training set, a small encoder learns from it: no labels from you, and the serving cost of a fine-tuned encoder. That's [the next post](/distilling-a-classifier/).
 - **A decision encoder, plus a few labels?** Amber needs none, and fine-tuning needs hundreds. Fine-tuning Amber itself on 10 to 100 labels per class could beat both.
 - **Fine-tune or optimize the prompt?** Same tasks: plain vs. GEPA-optimized prompt, base vs. LoRA weights.
 - **Few labels, a frozen sentence encoder?** A ready-made embedding model with a logistic regression on top, trained in seconds, or SetFit, which first fine-tunes it on pairs of examples.

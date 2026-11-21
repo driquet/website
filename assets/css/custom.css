@@ -1,6 +1,11 @@
 .max-w-prose {
     text-align: justify;
 }
+/* Justified headings stretch word gaps (worst on the post title) */
+.max-w-prose h1, .prose h2, .prose h3 { text-align: left; }
+
+/* Middle (numeric) cells on one line, first and last columns and headers wrap: wrap the markdown table in <div class="table-tight"> */
+.prose .table-tight td:not(:first-child):not(:last-child) { white-space: nowrap; }
 
 .chroma .lntable {
     overflow-x: auto;
@@ -153,6 +158,11 @@ span.f1 { display: inline-block; min-width: 3.2em; padding: 0.05em 0.4em; border
 
 /* Table with row blocks: <table class="grouped"><tbody>..</tbody><tbody>..</tbody></table>, a double line between blocks */
 .prose table.grouped tbody + tbody tr:first-child td { border-top: 3px double #898781; }
+/* Row blocks tinted by role, same colors as the cards: <tbody class="rows-purple|rows-blue|rows-green">; legend: <span class="row-key row-key-blue">..</span> */
+.prose tbody.rows-purple td, .row-key-purple { background: rgba(124, 77, 204, 0.12); }
+.prose tbody.rows-blue td, .row-key-blue { background: rgba(42, 120, 214, 0.12); }
+.prose tbody.rows-green td, .row-key-green { background: rgba(27, 175, 122, 0.12); }
+.row-key { display: inline-block; padding: 0.05em 0.5em; border-radius: 4px; }
 
 /* Publication/talk entries (shortcode entry); badge colors come from the Blowfish scheme */
 .prose .entry { margin: 0 0 1.2rem; }

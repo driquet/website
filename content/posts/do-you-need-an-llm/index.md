@@ -647,7 +647,7 @@ Well, it depends! Three tasks on one laptop are three data points, not a law. Yo
 </figure>
 
 - **No labels, no hard constraints:** use something already trained. Try a decision model if one fits your task and your hardware: OneJev1.6-4B beat everything I trained on CLINC and VAST. But on DynaSent, the only task neither in its training data nor on the index, a plain zero-shot prompt did as well, so try both. A generic prompt gets worse with more classes, and a few random examples won't fix it: they helped on small intent sets, but on none of the full tasks.
-- **No labels, but tight constraints:** a 4B model is out, so you need labels from somewhere. The practical way is to let a larger LLM label a few thousand of your texts, then train a small model on them (a teacher and a student, or distillation). I didn't test it, and the student will copy the teacher's mistakes. But the learning curves give an idea of how much to label: a few dozen per class for intents, thousands for stance.
+- **No labels, but tight constraints:** a 4B model is out, so you need labels from somewhere. The practical way is to let a larger LLM label a few thousand of your texts, then train a small model on them (a teacher and a student, or distillation). I didn't test it here ([part 3]({{< ref "/posts/distilling-a-classifier" >}}) does), and the student will copy the teacher's mistakes. But the learning curves give an idea of how much to label: a few dozen per class for intents, thousands for stance.
 - **Tight latency or deployment constraints:** there are not many options. TF-IDF answers in under a millisecond on a CPU, with half a gigabyte. A ~150M encoder needs 7.6 ms (on the laptop's GPU, more on a CPU) and 1.5 GB. The 4B models need 1 to 2 s and 18 GB.
 - **No hard constraints:** it depends on the task.
   - *The words give the answer away* (intents, topics): start with TF-IDF, it's a strong baseline up to a few dozen classes. A ~150M encoder adds 5.4 points on the full CLINC task.
@@ -668,7 +668,7 @@ As I said at the start, this is a weekend project. It was never meant to be pape
 
 - **[How small can a classifier be?]({{< ref "/posts/how-small-can-a-classifier-be" >}})** The encoder side: from 17M to 150M parameters, how many labels each size needs, CPU or GPU. Quantization too, for the encoders and the 4B models alike, so the cost comparison is fair. And how they compare with ready-made models that need no labels or only a few (sentence embeddings with a logistic regression, SetFit).
 - **Fine-tune or optimize the prompt?** Same tasks: plain vs. GEPA-optimized prompt, base vs. LoRA weights.
-- **No labels, but an encoder anyway?** A large LLM labels the training set, then a small encoder is fine-tuned on its answers (a teacher and a student). How close does the student get, how many labels does it need, and what does it cost?
+- **[No labels, but an encoder anyway?]({{< ref "/posts/distilling-a-classifier" >}})** A large LLM labels the training set, then a small encoder is fine-tuned on its answers (a teacher and a student). How close does the student get, how many labels does it need, and what does it cost?
 
 ## Related reading
 
