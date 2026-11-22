@@ -1,0 +1,19 @@
+{{/* Override of themes/blowfish chart shortcode: on narrow screens, charts get taller (aspect ratio capped at 1)
+  so the plot isn't squeezed by its title and legend. */}}
+{{ $id := delimit (slice "chart" (partial "functions/uid.html" .)) "-" }}
+<div class="chart">
+  <canvas id="{{ $id }}"></canvas>
+  <script type="text/javascript">
+    window.addEventListener("DOMContentLoaded", (event) => {
+      const ctx = document.getElementById("{{ $id }}");
+      const config = {
+        {{ .Inner | safeJS }}
+      };
+      if (window.innerWidth < 640) {
+        config.options = config.options || {};
+        config.options.aspectRatio = Math.min(config.options.aspectRatio || 2, 1);
+      }
+      const chart = new Chart(ctx, config);
+    });
+  </script>
+</div>
