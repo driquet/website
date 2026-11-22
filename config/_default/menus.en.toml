@@ -33,6 +33,7 @@ weight = 30
 [[main]]
 identifier = "mail"
 pre = "envelope"
+title = "Email"
 url = "mailto:d.riquet@gmail.com"
 weight = 40
 

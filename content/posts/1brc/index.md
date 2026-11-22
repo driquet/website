@@ -407,7 +407,7 @@ With our significant improvements to the three main bottlenecks - I/O operations
 
 To address the issue of potentially truncated lines at the end of each chunk, my approach consists in holding onto any partial line from the current chunk, and combining it with the beginning of the next chunk. The following diagram illustrates this concept:
 
-![](buffer-read.png "Example of a sliding window with a 16-bytes read buffer")
+![Diagram of a 16-byte read buffer sliding over the file, carrying a partial line over to the next chunk](buffer-read.png "Example of a sliding window with a 16-bytes read buffer")
 
 Let's illustrate this concept with a practical example using a 16-byte read buffer. In our initial read, we process 16 bytes of data. We notice that `fizz` (highlighted in orange) is cut off at the buffer's end. This partial word is set aside, excluded from our current chunk analysis. For the second read, we adjust our strategy. Taking into account the 4-byte leftover (shown in green) from the previous read, we only fetch 12 new bytes. This approach maintains our 16-byte buffer size while ensuring we don't miss or split any data across reads.
 

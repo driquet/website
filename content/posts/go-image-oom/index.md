@@ -122,13 +122,13 @@ go tool pprof -http :8081 http://localhost:8080/debug/pprof/heap
 
 This will open a tab in your browser where you can explore the application's memory usage through various viewers and samples. Let’s start by examining the flame graph for the `inuse_space` sample, which shows the amount of memory that’s allocated and not yet released (at the time of the command).
 
-![](flame-inuse.png "Flame graph for the *inuse_space* sample")
+![Flame graph of in-use memory by call stack](flame-inuse.png "Flame graph for the *inuse_space* sample")
 
 No surprises here in terms of memory usage: most of the allocated memory is consumed by the decoded image. The total memory usage isn’t excessive, but it varies depending on the size of the image being processed. However, we can observe a small portion of memory (on the far right) associated with the `image.At` function, which is responsible for retrieving each pixel in the `countWhitePixels` function.
 
 Now, let’s examine the `alloc_space` sample, which displays the total amount of memory allocated since the application started.
 
-![](flame-alloc.png "Flame graph for the *alloc_space* sample")
+![Flame graph of allocated memory by call stack](flame-alloc.png "Flame graph for the *alloc_space* sample")
 
 Here’s the first surprise! The total memory allocated since the application started is split almost evenly between `image.Decode` and `image.At`, each consuming around 300 MB. I didn’t expect `image.At` to use that much memory, but considering it copies each pixel (4 `uint8` values per pixel), it makes sense. This could be easily avoided by manipulating the underlying array of `uint8` instead of calling `image.At`. However, this still doesn't explain why the application exceeded its memory limit at one point and was terminated.
 
@@ -171,7 +171,7 @@ HeapAlloc = 10 MiB	HeapIdle = 12 MiB	HeapSys = 23 MiB
 
 Here is a graph representing the memory consumption, with our application without memory limit:
 
-![](graph_memory.png "Memory consumption over time")
+![Graph of memory consumption over time, before the optimizations](graph_memory.png "Memory consumption over time")
 
 The graph shows memory usage over time, with `HeapSys` representing the application's overall memory footprint. You can think of `HeapSys` as nearly the sum of `HeapAlloc` and `HeapIdle`: `HeapAlloc` is the actual memory in use by the application, while `HeapIdle` is memory that Go has either reserved for future allocations or not yet reclaimed by the OS. This helps us see how much memory is actively in use versus reserved but idle.
 
@@ -255,7 +255,7 @@ Using this feature is straightforward: you can set it with the `GOMEMLIMIT` envi
 
 As recommended in the official documentation, it’s best to leave a bit of headroom when setting `GOMEMLIMIT` (around 5-10%). For our case, we’ll set a memory limit of 45 MiB and apply all previous optimizations to see how it performs.
 
-![](graph_memory_after.png "Memory consumption over time (after optimizations)")
+![Graph of memory consumption over time, after the optimizations](graph_memory_after.png "Memory consumption over time (after optimizations)")
 
 Our application is no longer being killed, hooray! However, you might argue that I "cheated" by discarding some images. In a constrained environment like ours, tough decisions need to be made - one of which is filtering out certain inputs.
 

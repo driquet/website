@@ -21,6 +21,7 @@ bio = "Turning NLP research into email protection that runs at scale, and superv
 links = [
     { envelope = "mailto:d.riquet@gmail.com" },
     { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
+    { orcid = "https://orcid.org/0009-0004-9835-9878" },
     { linkedin = "https://linkedin.com/in/damien-riquet" },
     { github = "https://github.com/driquet" },
     { rss = "/index.xml" },

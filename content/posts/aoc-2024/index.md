@@ -17,11 +17,11 @@ Here’s a look back at what I learned, how I performed, and the moments that ma
 ## Stars Earned, Coffee Consumed, Sanity Lost
 Let’s kick things off with the highlight: for the first time ever, **I completed all 25 days during the advent period**! This is a big milestone for me, as I usually drop off before reaching the end. While I don’t participate in the leaderboard (feel free to blame kids, time zones, LLMs, or my already busy life), I’m genuinely proud of how I handled it this year.
 
-![](aoc_time.png)
+![Line chart of hours between puzzle release and completion, per day, for parts one and two](aoc_time.png)
 
 I took several "days off" (with the challenge being completed at least 24 hours later) but managed to keep up with the Advent rhythm.
 
-![](aoc_ranking.png)
+![Line chart of my global rank per day for parts one and two, dropping from about 110,000 to under 10,000](aoc_ranking.png)
 
 Aside from the first challenge, I'm pretty happy with my ranking. My lowest rank is 5069 (day 16, part two), which shows how close (or not) I was to earning points :-)
 
@@ -63,7 +63,7 @@ for scanner.Scan() {
 ### Strength in Simplicity: Brute Force
 As you've probably deduced from my previous articles, I have a bit of a thing for optimization. And, of course, a few crazy folks have taken on the challenge of solving these puzzles in the least possible time. I managed to pull it off for the 2015 edition: every challenge ran in under a second. But this year? Well, I must admit, I gave in to my weaknesses and relied on brute force more times than I'd care to admit. This allowed me to complete all challenges. Don’t worry, though: I swear I’ll go back and optimize those challenges.
 
-![](duration.png)
+![Terminal output of run times per puzzle, about 30 seconds in total](duration.png)
 
 It takes about 30 seconds to solve all the challenges. Now, I just need to shave off 29 seconds, totally achievable, right?
 
@@ -76,7 +76,7 @@ It might not have been the biggest challenge, but it was definitely the most int
 ### Favorite Puzzle
 [Day 24: Crossed Wires](https://adventofcode.com/2024/day/24) is definitely my favorite challenge of the year. Part one was enjoyable, but part two was an absolute blast! Full adder, Half adder, Ripple-carry adder: these terms were all new to me. I had a great time learning about them and ended up solving the challenge by analyzing a visualization and creating heuristics to locate the faulty gates.
 
-![](gates.png)
+![Graph of logic gates (AND, OR, XOR) wiring input bits into output bits](gates.png)
 
 ## Closing Thoughts and Lessons Learned
 

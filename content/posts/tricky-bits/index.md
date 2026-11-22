@@ -26,19 +26,19 @@ I authored three campaigns for this edition. From gentlest to nastiest:
 
 A beginner-friendly OSINT chase. Waldo, a globe-trotter, keeps mailing postcards, and everything you need to find him is right there in them. Expect EXIF data, reverse image search, geolocation from landmarks, and a dash of flight tracking. A great place to start.
 
-![](catch-me-if-you-scan.webp)
+![Green terminal-style illustration of a world map, postcards and a hidden traveler in a crowd](catch-me-if-you-scan.webp)
 
 ### [Barry Buffer and the Initialization Sequence](https://trickybits.dev/campaigns/barry-buffer-init/) *(3/5, ~90 min)*
 
 A sysadmin vanished mid-procedure and encoded his monthly system reset across logs and config files. Recover the pieces using ciphers, assorted encodings, a few esoteric languages, and some light forensics. Barry's advice: *read it like a system, not like a sentence.*
 
-![](barry-buffer-init.webp)
+![Illustration of a sysadmin working late in front of several monitors](barry-buffer-init.webp)
 
 ### [Barry Buffer and the Cold Boot Case](https://trickybits.dev/campaigns/barry-buffer-coldboot/) *(4/5, ~2h15)*
 
 A noir digital-forensics investigation. A meticulous archivist who encrypts everything has left evidence on a seized laptop, and a protected witness is missing. Crack your way through encryption, steganography, audio ciphers, and metadata to find them before time runs out.
 
-![](barry-buffer-coldboot.webp)
+![Noir illustration of an investigation board with photos, notes and a laptop under a desk lamp](barry-buffer-coldboot.webp)
 
 ## Go play
 

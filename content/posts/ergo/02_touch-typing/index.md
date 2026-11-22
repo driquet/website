@@ -17,7 +17,7 @@ As mentioned in the [previous article]({{< ref "/posts/ergo/01_why/index.md" >}}
 ## The Problem
 Picture a chicken pecking for food, head bobbing up and down. Got that image? Great. Now, imagine someone typing on their keyboard, glancing down every few seconds to make sure their fingers are on the right keys. Congratulations, you've just visualized what I like to call *Chicken Syndrome*!
 
-![](chicken_syndrome.webp)
+![Cartoon of an office worker with a chicken head, bobbing to look at the keyboard while typing](chicken_syndrome.webp)
 
 This repetitive head movement, though instinctive, can lead to more than just a quirky typing style. Every time you crane your neck to check the keyboard, you're inviting strain to your neck muscles, potentially paving the way for RSI. In other words, your "chicken pecks" might turn into a real pain in the neck, literally.
 
@@ -27,7 +27,7 @@ The solution to this? **Touch typing**.
 ### Definition
 Touch typing is a technique that relies on muscle memory to type without needing to look at the keyboard. Each finger is assigned specific keys, which improves speed, accuracy, and minimizes strain, no more "chicken peck"! For many, it also addresses the common issue of not using all ten fingers. By spreading the work evenly across all fingers, it reduces the strain on overused ones and limits the distance your hands and fingers need to travel, helping to lower the risk of RSI.
 
-![](colored-keys.jpg "Source: [vanderbilt.edu](https://news.vanderbilt.edu/2016/10/18/todays-self-taught-typists-almost-as-fast-as-touch-typistsas-long-as-they-can-see-the-keyboard/)")
+![Keyboard with keys colored by the finger that should press them, and two hands on the home row](colored-keys.jpg "Source: [vanderbilt.edu](https://news.vanderbilt.edu/2016/10/18/todays-self-taught-typists-almost-as-fast-as-touch-typistsas-long-as-they-can-see-the-keyboard/)")
 
 In addition to physical benefits, touch typing also enhances accuracy and reduces mental load. Since you no longer need to think about key placement, you can type more efficiently and stay focused, which leads to fewer mistakes.
 
@@ -80,7 +80,7 @@ Here are some popular online tools for learning touch typing:
 
 Back in the day, I used [Klavaro](https://klavaro.sourceforge.io/en/index.html), a free software compatible with Windows, Linux and macOS.
 
-![](https://a.fsdn.com/con/app/proj/klavaro/screenshots/Tutor.png/max/max/1 "Klavaro: Basic Touch Typing exercise focusing on several letters")
+![Screenshot of a Klavaro touch-typing exercise](https://a.fsdn.com/con/app/proj/klavaro/screenshots/Tutor.png/max/max/1 "Klavaro: Basic Touch Typing exercise focusing on several letters")
 
 
 ### Personal experience
