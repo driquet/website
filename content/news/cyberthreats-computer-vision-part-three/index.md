@@ -1,7 +1,8 @@
 ---
 title: "Detection of Cyberthreats with Computer Vision (Part 3)"
+description: "Part 3 of my Hornetsecurity series on image analysis: content-based near-duplicate detection, such as object recognition and embedded text."
 date: 2025-06-13T10:40:45+02:00
-tags: ["Cybersecurity", "Computer Vision", "Phishing"]
+tags: ["Work"]
 url: cyberthreats-computer-vision-part-three
 ---
 

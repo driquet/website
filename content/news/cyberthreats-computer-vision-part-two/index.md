@@ -1,7 +1,8 @@
 ---
 title: "Detection of Cyberthreats with Computer Vision (Part 2)"
+description: "Part 2 of my Hornetsecurity series on image analysis: spotting duplicate and near-duplicate phishing images with hashes and color histograms."
 date: 2025-02-26T01:00:00+01:00
-tags: ["Cybersecurity", "Computer Vision", "Phishing"]
+tags: ["Work"]
 url: cyberthreats-computer-vision-part-two
 ---
 I'm excited to share **my latest blog post**, published on **Hornetsecurity’s website**, where I explore the challenges of **detecting duplicate and near-duplicate images** in cybersecurity. Attackers often tweak phishing images to evade detection, making traditional filtering methods less effective.

@@ -1,7 +1,9 @@
 ---
 title: "Tau-Eval: A Unified Evaluation Framework for Useful and Private Text Anonymization"
+description: "Tau-Eval, accepted at the EMNLP 2025 Demo Track: an open-source framework to evaluate text anonymization on both privacy and utility."
+aliases: ["/taueval/"]
 date: 2025-10-15T08:00:00+01:00
-tags: ["Publication", "Privacy-Utility Trade-off", "Anonymization"]
+tags: ["Publication"]
 ---
 
 We are incredibly proud to announce the publication of our latest work, **TAU-EVAL: A Unified Evaluation Framework for Useful and Private Text Anonymization**, which has been accepted to the **Demo Track** of the prestigious **EMNLP** conference!

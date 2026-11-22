@@ -1,10 +1,12 @@
 ---
 title: "WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection"
+description: "WikiPhish, accepted at CODASPY 2024: a phishing website dataset of 110,606 pages, with Wikipedia as a diverse source of legitimate ones."
+aliases: ["/wikiphish/"]
 date: 2024-04-09T11:21:45+02:00
-tags: ["Publication", "Phishing", "Dataset"]
+tags: ["Publication"]
 ---
 
-Edit 09/2024: Added links.
+
 
 I'm proud to announce that our latest article **WikiPhish: A Diverse Wikipedia-Based Dataset for Phishing Website Detection** has been accepted at CODASPY 2024 (ACM Conference on Data and Application Security and Privacy).
 

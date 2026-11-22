@@ -1,7 +1,9 @@
 ---
 title: "Targeted Attacks: Redefining Spear Phishing and Business Email Compromise"
+description: "Our arXiv preprint proposes one definition of targeted attacks, covering spear phishing and Business Email Compromise, and reviews how to detect them."
+aliases: ["/targeted-attacks-arxiv/"]
 date: 2023-09-30T15:27:15+02:00
-tags: ["Publication", "Spear Phishing", "Business Email Compromise", "Email", "Attack"]
+tags: ["Publication"]
 toc:
   enable: false
 ---

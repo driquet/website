@@ -1,7 +1,9 @@
 ---
 title: "TAROT: Task-Oriented Authorship Obfuscation Using Policy Optimization Methods"
+description: "TAROT, accepted at PrivateNLP 2025: rewriting text with small policy-optimized models to hide its author while keeping it useful."
+aliases: ["/tarot/"]
 date: 2025-03-21T09:02:08+01:00
-tags: ["Publication", "Authorship Attribution", "Anonymization"]
+tags: ["Publication"]
 ---
 
 I'm proud to announce that our latest article **TAROT: Task-Oriented Authorship Obfuscation Using Policy Optimization Methods** has been accepted at PrivateNLP 2025 (Sixth Workshop on Privacy in Natural Language Processing, Colocated with NAACL 2025).

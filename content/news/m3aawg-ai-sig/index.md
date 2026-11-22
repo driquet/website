@@ -1,7 +1,9 @@
 ---
 title: "New Role: AI SIG Leader at M3AAWG"
+description: "Since early 2026, I lead the Artificial Intelligence Special Interest Group at M3AAWG, the anti-abuse industry's working group."
+aliases: ["/m3aawg-ai-sig/"]
 date: 2026-10-09T08:00:00+02:00
-tags: ["M3AAWG", "AI", "Anti-Abuse", "News"]
+tags: ["M3AAWG", "Work"]
 ---
 
 Some news I'm happy to share: since early 2026, I've been leading the **Artificial Intelligence Special Interest Group (AI SIG)** at [M3AAWG](https://www.m3aawg.org/), on top of my role as Lead Research Engineer at Hornetsecurity.
