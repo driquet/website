@@ -1,7 +1,8 @@
 ---
 title: "How Small Can a Text Classifier Be?"
+description: "Fine-tuned encoders and decision models from 17M to 4B parameters: what each costs on a laptop, with labels and without."
 date: 2026-11-16T10:00:00+01:00
-tags: ["AI", "Classification", "Encoders", "Quantization", "Benchmark"]
+tags: ["AI", "NLP", "Classification", "Benchmark"]
 showTableOfContents: true
 series: ["Classifying Text Locally"]
 series_order: 2
@@ -123,7 +124,7 @@ options: {
   },
   scales: {
     x: { ticks: { color: '#898781' }, grid: { display: false } },
-    y: { title: { display: true, text: "macro-F1 on the test set", color: '#898781' }, min: 0, max: 100, ticks: { color: '#898781' }, grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' } }
+    y: { title: { display: true, text: "macro-F1 on the test set", color: '#898781' }, min: 0, max: 100, ticks: { color: '#898781' }, grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' } }
   }
 }
 {{< /chart >}}
@@ -159,7 +160,7 @@ options: {
   },
   scales: {
     x: { ticks: { color: '#898781' }, grid: { display: false } },
-    y: { type: 'logarithmic', title: { display: true, text: "GB (log scale)", color: '#898781' }, min: 0.01, max: 30, ticks: { color: '#898781', callback: (v) => [0.01, 0.1, 1, 10].includes(v) ? v.toLocaleString('en-US') : '' }, grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' } }
+    y: { type: 'logarithmic', title: { display: true, text: "GB (log scale)", color: '#898781' }, min: 0.01, max: 30, ticks: { color: '#898781', callback: (v) => [0.01, 0.1, 1, 10].includes(v) ? v.toLocaleString('en-US') : '' }, grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' } }
   }
 }
 {{< /chart >}}
@@ -195,7 +196,7 @@ options: {
   },
   scales: {
     x: { ticks: { color: '#898781' }, grid: { display: false } },
-    y: { type: 'logarithmic', title: { display: true, text: "median latency per text (ms, log scale)", color: '#898781' }, min: 0.1, max: 3000, ticks: { color: '#898781', callback: (v) => [0.1, 1, 10, 100, 1000, 10000].includes(v) ? v.toLocaleString('en-US') : '' }, grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' } }
+    y: { type: 'logarithmic', title: { display: true, text: "median latency per text (ms, log scale)", color: '#898781' }, min: 0.1, max: 3000, ticks: { color: '#898781', callback: (v) => [0.1, 1, 10, 100, 1000, 10000].includes(v) ? v.toLocaleString('en-US') : '' }, grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' } }
   }
 }
 {{< /chart >}}
@@ -250,13 +251,13 @@ options: {
       type: 'logarithmic', min: 0.1, max: 10000,
       title: { display: true, text: 'latency per text, p50 (log scale)', color: '#898781' },
       ticks: { color: '#898781', maxRotation: 0, callback: (v) => ({0.1: '0.1 ms', 1: '1 ms', 10: '10 ms', 100: '100 ms', 1000: '1 s', 10000: '10 s'})[v] ?? '' },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     },
     y: {
       min: 80, max: 100,
       title: { display: true, text: 'macro-F1 on the full CLINC task', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -299,7 +300,7 @@ options: {
   plugins: { legend: { position: 'bottom', labels: { color: '#898781', usePointStyle: true, boxWidth: 8, boxHeight: 8, padding: 12 } } },
   scales: {
     x: { ticks: { color: '#898781' }, grid: { display: false } },
-    y: { min: 0, max: 100, title: { display: true, text: 'macro-F1 on the test set', color: '#898781' }, ticks: { color: '#898781', stepSize: 20 }, grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' } }
+    y: { min: 0, max: 100, title: { display: true, text: 'macro-F1 on the test set', color: '#898781' }, ticks: { color: '#898781', stepSize: 20 }, grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' } }
   }
 }
 {{< /chart >}}
@@ -340,7 +341,7 @@ options: {
   plugins: { legend: { position: 'bottom', labels: { color: '#898781', usePointStyle: true, boxWidth: 8, boxHeight: 8, padding: 12 } } },
   scales: {
     x: { ticks: { color: '#898781' }, grid: { display: false } },
-    y: { min: 0, max: 28, title: { display: true, text: 'peak RAM during training, GB', color: '#898781' }, ticks: { color: '#898781', stepSize: 4 }, grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' } }
+    y: { min: 0, max: 28, title: { display: true, text: 'peak RAM during training, GB', color: '#898781' }, ticks: { color: '#898781', stepSize: 4 }, grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' } }
   }
 }
 {{< /chart >}}
@@ -465,7 +466,7 @@ options: {
       min: 35, max: 80,
       title: { display: true, text: 'macro-F1 on the test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }

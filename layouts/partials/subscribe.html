@@ -1,0 +1,9 @@
+{{/* Buttondown subscribe card. Buttondown emails new items from /posts/index.xml (configured in its dashboard). */}}
+<form class="subscribe not-prose" action="https://buttondown.com/api/emails/embed-subscribe/driquet" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/driquet', 'popupwindow')">
+  <p class="subscribe-pitch">Get new posts on <b>NLP</b>, <b>small models</b> and <b>email security</b> in your inbox. Or follow via <a href="{{ "/posts/index.xml" | relLangURL }}">RSS</a>.</p>
+  <div class="subscribe-fields">
+    <label for="bd-email" class="sr-only">Email</label>
+    <input type="email" name="email" id="bd-email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
+  </div>
+</form>

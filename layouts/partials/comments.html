@@ -1,0 +1,2 @@
+{{/* Blowfish comments hook (needs article.showComments = true), used here for the subscribe form on posts and news. */}}
+{{ if in (slice "posts" "news") .Section }}{{ partial "subscribe.html" . }}{{ end }}

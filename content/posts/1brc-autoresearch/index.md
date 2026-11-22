@@ -1,7 +1,8 @@
 ---
 title: "One Billion Rows, 35 Minutes: Letting an Agent Optimize My Go Code"
+description: "I gave a coding agent my Go solution to the One Billion Row Challenge and a benchmark. In 35 minutes, it got within 6% of the disk's read speed."
 date: 2026-07-19T10:30:00+02:00
-tags: ["Challenge", "Golang", "Optimization", "Performance", "AI", "Coding Agents", "Deep Dive"]
+tags: ["Challenge", "Golang", "Performance", "AI", "LLM", "Deep Dive"]
 showTableOfContents: true
 draft: false
 ---
@@ -51,7 +52,77 @@ The interesting work is not in the agent. It is in designing the measurement so 
 
 One round of the loop looks like this:
 
-![Flowchart of one round: edit main.go with one idea, build it, check correctness on 1M rows, run three cold-cache benchmarks on 250M rows, check correctness again, accept and commit if at least 3% faster than the champion, otherwise reject and revert; after five rounds without a win, stop](autoresearch-loop.png "One round of the loop")
+<figure class="svg-figure">
+<svg viewBox="0 0 600 770" role="img" aria-label="One round of the loop: edit main.go with one idea; it must build, be correct on 1M rows, be benchmarked with three cold-cache runs on 250M rows, be correct on 250M rows, and be at least 3% faster than the champion. Any no rejects and reverts the change; all yeses accept and commit it as the new champion. Either way the journal is updated. After five rounds without a win, the loop stops; otherwise the next round starts.">
+  <defs>
+    <marker id="al-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+  </defs>
+  <g fill="currentColor" font-family="inherit" text-anchor="middle">
+    <!-- edit -->
+    <rect x="240" y="10" width="280" height="56" rx="12" fill="#2a78d6" fill-opacity="0.25" stroke="#3987e5" stroke-width="2"/>
+    <text x="380" y="34" font-size="15" font-weight="700">Edit main.go with one idea</text>
+    <text x="380" y="54" font-size="12" opacity="0.85">the agent picks the next optimization</text>
+    <line x1="380" y1="66" x2="380" y2="88" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <!-- gates -->
+    <rect x="240" y="92" width="280" height="44" rx="22" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="380" y="119" font-size="15" font-weight="700">Does it build?</text>
+    <line x1="380" y1="136" x2="380" y2="162" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <text x="392" y="154" font-size="12" text-anchor="start" opacity="0.85">yes</text>
+    <rect x="240" y="166" width="280" height="44" rx="22" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="380" y="193" font-size="15" font-weight="700">Correct on 1M rows?</text>
+    <line x1="380" y1="210" x2="380" y2="236" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <text x="392" y="228" font-size="12" text-anchor="start" opacity="0.85">yes</text>
+    <!-- benchmark -->
+    <rect x="240" y="240" width="280" height="56" rx="12" fill="#2a78d6" fill-opacity="0.25" stroke="#3987e5" stroke-width="2"/>
+    <text x="380" y="264" font-size="15" font-weight="700">Benchmark on 250M rows</text>
+    <text x="380" y="284" font-size="12" opacity="0.85">3 cold-cache runs · score = median</text>
+    <line x1="380" y1="296" x2="380" y2="322" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <rect x="240" y="326" width="280" height="44" rx="22" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="380" y="353" font-size="15" font-weight="700">Correct on 250M rows?</text>
+    <line x1="380" y1="370" x2="380" y2="396" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <text x="392" y="388" font-size="12" text-anchor="start" opacity="0.85">yes</text>
+    <rect x="240" y="400" width="280" height="56" rx="28" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="380" y="424" font-size="15" font-weight="700">At least 3% faster</text>
+    <text x="380" y="444" font-size="12" opacity="0.8">than the champion?</text>
+    <line x1="380" y1="456" x2="380" y2="486" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <text x="392" y="476" font-size="12" text-anchor="start" opacity="0.85">yes</text>
+    <!-- "no" exits, into the reject trunk -->
+    <g stroke="#eb6834" stroke-width="1.5" fill="none">
+      <path d="M240,114 H110 V486" marker-end="url(#al-arrow)"/>
+      <line x1="240" y1="188" x2="110" y2="188"/>
+      <line x1="240" y1="348" x2="110" y2="348"/>
+      <line x1="240" y1="428" x2="110" y2="428"/>
+    </g>
+    <g fill="#eb6834" font-size="12">
+      <text x="222" y="108">no</text><text x="222" y="182">no</text><text x="222" y="342">no</text><text x="222" y="422">no</text>
+    </g>
+    <!-- outcomes -->
+    <rect x="20" y="490" width="180" height="56" rx="12" fill="#d95926" fill-opacity="0.2" stroke="#eb6834" stroke-width="2"/>
+    <text x="110" y="514" font-size="15" font-weight="700">Reject</text>
+    <text x="110" y="534" font-size="12" opacity="0.85">revert the change</text>
+    <rect x="260" y="490" width="240" height="56" rx="12" fill="#2e9e6b" fill-opacity="0.22" stroke="#2e9e6b" stroke-width="2"/>
+    <text x="380" y="514" font-size="15" font-weight="700">Accept</text>
+    <text x="380" y="534" font-size="12" opacity="0.85">commit: the new champion</text>
+    <!-- journal -->
+    <path d="M110,546 V602 H186" stroke="currentColor" stroke-width="1.5" fill="none" marker-end="url(#al-arrow)"/>
+    <line x1="380" y1="546" x2="380" y2="576" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <rect x="190" y="580" width="260" height="44" rx="12" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="320" y="607" font-size="15" font-weight="700">Log the round in JOURNAL.md</text>
+    <line x1="320" y1="624" x2="320" y2="648" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <!-- stop? -->
+    <rect x="190" y="652" width="260" height="44" rx="22" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="320" y="679" font-size="15" font-weight="700">5 rounds without a win?</text>
+    <line x1="320" y1="696" x2="320" y2="720" stroke="currentColor" stroke-width="1.5" marker-end="url(#al-arrow)"/>
+    <text x="332" y="713" font-size="12" text-anchor="start" opacity="0.85">yes</text>
+    <rect x="235" y="724" width="170" height="40" rx="12" fill="#d4a72c" fill-opacity="0.22" stroke="#d4a72c" stroke-width="2"/>
+    <text x="320" y="749" font-size="15" font-weight="700">Stop: plateau</text>
+    <!-- next round -->
+    <path d="M190,674 H6 V38 H236" stroke="#2e9e6b" stroke-width="1.5" fill="none" marker-end="url(#al-arrow)"/>
+    <text x="172" y="668" font-size="12" fill="#2e9e6b" text-anchor="end">no: next round</text>
+  </g>
+</svg>
+</figure>
+<p class="caption">One round of the loop. Any failed check rejects the candidate; only a clear win becomes the new champion.</p>
 
 The run itself was [Claude Code](https://github.com/anthropics/claude-code) running Fable 5, unattended, with permission prompts disabled (scoped: the only `sudo` it got was the one command that purges the page cache). But nothing in the recipe depends on that choice. `program.md` is the actual driver, and any agent that can edit a file, run a build, and read a benchmark result can execute it.
 
@@ -124,7 +195,7 @@ options: {
       min: 0.6,
       title: { display: true, text: 'median time on 250M rows (s, log scale)', color: '#898781' },
       ticks: { color: '#898781' },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }

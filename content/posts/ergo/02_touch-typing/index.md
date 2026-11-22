@@ -1,7 +1,8 @@
 ---
 title: "Touch Typing: The Secret to Efficient and Pain-Free Typing"
+description: "Stop looking at your keyboard: why touch typing is the first ergonomic habit worth learning, and how to get there."
 date: 2025-01-30T01:00:00+01:00
-tags: ["Ergonomics", "Keyboard"]
+tags: ["Ergonomics", "Productivity"]
 showTableOfContents: true
 series: ["Ergonomics for the Modern Worker"]
 series_order: 2

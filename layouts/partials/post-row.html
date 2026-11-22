@@ -1,0 +1,5 @@
+{{/* One post row: date, title, front-matter description. */}}
+<li data-tags="{{ range .GetTerms "tags" }}{{ .Title | urlize }} {{ end }}">
+  <span class="home-date">{{ .Date.Format "2 Jan 2006" }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Draft }} <span class="badge badge-draft">Draft</span>{{ end }}
+  {{ with .Description }}<br><span class="home-blurb">{{ . }}</span>{{ end }}
+</li>

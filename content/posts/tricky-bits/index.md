@@ -1,7 +1,8 @@
 ---
 title: "Crack the Stack: Introducing Tricky Bits"
+description: "Tricky Bits is live: browser-based coding and security puzzles, grown from an internal challenge at Hornetsecurity."
 date: 2026-06-30T09:00:00+02:00
-tags: ["Challenge", "CTF", "OSINT", "Side Project"]
+tags: ["Challenge", "CTF", "Security"]
 draft: false
 ---
 

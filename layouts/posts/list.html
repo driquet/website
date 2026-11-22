@@ -1,0 +1,4 @@
+{{ define "main" }}
+  {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
+  {{ partial "post-list.html" (dict "page" . "pages" $pages "tagPages" $pages) }}
+{{ end }}

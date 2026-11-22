@@ -1,0 +1,21 @@
+{{/* Override of themes/blowfish recent-articles/main.html: compact text lists (news, then posts) and the subscribe card.
+  Post rows: partials/post-row.html. */}}
+{{ if .Site.Params.homepage.showRecent | default false }}
+  {{ $allNews := where site.RegularPages "Section" "news" }}
+  {{ $allPosts := where site.RegularPages "Section" "in" site.Params.mainSections }}
+  <section class="prose dark:prose-invert w-full home-col">
+    {{ with first 5 $allNews }}
+      <h2 class="home-h2">Recent news <a href="{{ "/news/" | relLangURL }}">All {{ len $allNews }} news →</a></h2>
+      <ul class="home-list">
+        {{ range . }}
+          <li><span class="home-date">{{ .Date.Format "Jan 2006" }}</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <h2 class="home-h2">Recent posts <a href="{{ "/posts/" | relLangURL }}">All {{ len $allPosts }} posts →</a></h2>
+    <ul class="home-list home-posts">
+      {{ range first (site.Params.homepage.showRecentItems | default 9) $allPosts }}{{ partial "post-row.html" . }}{{ end }}
+    </ul>
+    {{ partial "subscribe.html" . }}
+  </section>
+{{ end }}

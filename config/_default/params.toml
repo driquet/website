@@ -12,14 +12,15 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts"]
+feedSections = ["posts", "news"] # home RSS (layouts/_default/rss.xml)
 # robots = ""
 
 disableImageOptimization = true
 disableTextInHeader = false
 
-defaultBackgroundImage = "img/aurora-constellation.svg"
-backgroundCanvas = true # fixed animated backdrop on every page
+# defaultBackgroundImage = "img/aurora-constellation.svg"
+backgroundCanvas = false
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
 defaultSocialImage = "img/profile.webp"
 
@@ -51,12 +52,13 @@ layoutBackgroundBlur = false # only used when layout equals background
 [article]
 showReadingProgress = true
 showDate = true
-showViews = true
-showLikes = true
+showViews = false
+showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = false
 showAuthor = true
 showAuthorBottom = true
+showComments = true # renders layouts/partials/comments.html (subscribe form)
 showHero = true
 heroStyle = "background"           # valid options: basic, big, background, thumbAndBackground
 layoutBackgroundBlur = true        # only used when heroStyle equals background or thumbAndBackground
@@ -121,11 +123,3 @@ groupByYear = false
 cardView = false
 cardViewScreenWidth = false
 
-[firebase]
-apiKey = "AIzaSyDfpGWng1eBbw1y26CBdbdmEFPRzfcCrJQ"
-authDomain = "website-9ff6c.firebaseapp.com"
-projectId = "website-9ff6c"
-storageBucket = "website-9ff6c.appspot.com"
-messagingSenderId = "798601031112"
-appId = "1:798601031112:web:fd0b4bef8ffe5c03cf24fd"
-measurementId = "G-4PQF5PN90N"

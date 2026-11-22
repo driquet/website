@@ -1,7 +1,8 @@
 ---
 title: "Taming the Flow: Throttling in Golang with Semaphore Magic"
+description: "Throttling versus rate limiting, and how to throttle concurrent work in Go with a semaphore, with examples."
 date: 2024-02-27T00:00:00+02:00
-tags: ["Golang", "Throttling", "Rate Limiting"]
+tags: ["Golang", "Performance"]
 showTableOfContents: true
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Do You Need an LLM for That? Classifying Text Locally"
+description: "Three tasks, four approaches, one laptop: when prompting an LLM beats a small local classifier, and when it does not."
 date: 2026-11-01T10:00:00+01:00
-tags: ["AI", "LLM", "Classification", "Benchmark"]
+tags: ["AI", "LLM", "NLP", "Classification", "Benchmark"]
 showTableOfContents: true
 series: ["Classifying Text Locally"]
 series_order: 1
@@ -178,7 +179,7 @@ options: {
       min: 75, max: 100,
       title: { display: true, text: 'macro-F1 on the test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -262,7 +263,7 @@ options: {
       min: 0, max: 100,
       title: { display: true, text: 'macro-F1 on the VAST test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 20 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -331,7 +332,7 @@ options: {
       min: 0, max: 100,
       title: { display: true, text: 'macro-F1 on the DynaSent test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 20 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -409,7 +410,7 @@ options: {
       min: -40, max: 30,
       title: { display: true, text: 'Ettin-150M minus zero-shot Qwen (macro-F1 points)', color: '#898781' },
       ticks: { color: '#898781', stepSize: 10 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -473,13 +474,13 @@ options: {
       type: 'logarithmic', min: 0.1, max: 10000,
       title: { display: true, text: 'latency per text, p50 (log scale)', color: '#898781' },
       ticks: { color: '#898781', maxRotation: 0, callback: (v) => ({0.1: '0.1 ms', 1: '1 ms', 10: '10 ms', 100: '100 ms', 1000: '1 s', 10000: '10 s'})[v] ?? '' },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     },
     y: {
       min: 75, max: 100,
       title: { display: true, text: 'macro-F1 on the full CLINC task', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -562,7 +563,7 @@ options: {
       type: 'logarithmic', min: 0.1, max: 3000,
       title: { display: true, text: 'latency per text, p50 (log scale)', color: '#898781' },
       ticks: { color: '#898781', callback: (v) => ({0.1: '0.1 ms', 1: '1 ms', 10: '10 ms', 100: '100 ms', 1000: '1 s', 10000: '10 s'})[v] ?? '' },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }

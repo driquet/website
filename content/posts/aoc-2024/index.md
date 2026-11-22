@@ -1,7 +1,8 @@
 ---
 title: "Advent of Code 2024: Late Nights, Debugging, and \"Why Is This So Slow?\""
+description: "My first Advent of Code finished during the advent, all 25 days: my strategy, the highs and lows, and lessons learned."
 date: 2024-12-26T09:01:21+01:00
-tags: ["Coding", "Challenge", "Golang", "Advent of Code"]
+tags: ["Challenge", "Golang"]
 showTableOfContents: true
 ---
 

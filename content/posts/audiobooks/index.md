@@ -1,7 +1,8 @@
 ---
 title: "Excuses to Listen: How Audiobooks Rebuilt My Routine"
+description: "How two years of audiobooks turned my on-and-off reading into a daily habit, and got me running along the way."
 date: 2026-10-09T09:00:00+02:00
-tags: ["Audiobooks", "Books", "LitRPG", "Habits", "Running"]
+tags: ["Habits", "Books"]
 showTableOfContents: true
 ---
 

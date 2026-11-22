@@ -1,7 +1,8 @@
 ---
 title: "From Restarts to Resilience: Fixing Memory Overload in Go’s Image Service"
+description: "Why our Go image-processing services kept getting OOM-killed, how we diagnosed it, and how we made them resilient."
 date: 2024-11-20T12:34:56+02:00
-tags: ["Golang", "Crash", "Memory", "Image", "Deep Dive"]
+tags: ["Golang", "Performance", "Computer Vision", "Security", "Deep Dive"]
 showTableOfContents: true
 ---
 

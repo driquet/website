@@ -1,0 +1,7 @@
+{{ define "main" }}
+  {{ if eq .Data.Plural "series" }}
+    {{ partial "post-list.html" (dict "page" . "pages" (sort .Pages "Params.series_order")) }}
+  {{ else }}
+    {{ partial "post-list.html" (dict "page" . "pages" .Pages.ByDate.Reverse "tagPages" (where site.RegularPages "Section" "posts")) }}
+  {{ end }}
+{{ end }}

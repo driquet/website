@@ -1,0 +1,50 @@
+{{/* Post list page (posts/news sections, tag and series pages): intro, tag bar, text rows.
+  Context: dict "page" "pages" "tagPages" "minCount". Bar shows tags used by minCount+ (default 2) of tagPages; no tagPages, no bar.
+  On section pages the bar filters rows in place (URL hash, e.g. /news/#m3aawg); links fall back to tag pages without JS. */}}
+{{ $page := .page }}
+{{ $isSection := eq $page.Kind "section" }}
+{{ $isTag := and (eq $page.Kind "term") (eq $page.Data.Plural "tags") }}
+{{ $counts := dict }}
+{{ range .tagPages }}{{ range .GetTerms "tags" }}
+  {{ $counts = merge $counts (dict .RelPermalink (add (index $counts .RelPermalink | default 0) 1)) }}
+{{ end }}{{ end }}
+<section class="prose dark:prose-invert w-full home-col">
+  <h1 class="mt-5">{{ if $isTag }}#{{ lower $page.Title }}{{ else }}{{ $page.Title }}{{ end }}</h1>
+  {{ with $page.Content }}<div class="list-intro">{{ . }}</div>{{ end }}
+  {{ if .tagPages }}
+  <p class="tag-bar">
+    <a href="{{ cond $isSection $page.RelPermalink ("/posts/" | relLangURL) }}" data-tag=""{{ if $isSection }} class="active"{{ end }}><span>#</span>all</a>
+    {{ range site.Taxonomies.tags.ByCount }}
+      {{ if ge (index $counts .Page.RelPermalink | default 0) ($.minCount | default 2) }}
+        <a href="{{ .Page.RelPermalink }}" data-tag="{{ .Page.Title | urlize }}"{{ if eq .Page.RelPermalink $page.RelPermalink }} class="active"{{ end }}><span>#</span>{{ lower .Page.Title }}</a>
+      {{ end }}
+    {{ end }}
+    <a href="{{ "/tags/" | relLangURL }}">all tags →</a>
+  </p>
+  {{ else }}
+  <hr class="list-rule">
+  {{ end }}
+  <ul class="home-list home-posts">
+    {{ range .pages }}{{ partial "post-row.html" . }}{{ end }}
+  </ul>
+</section>
+{{ if $isSection }}
+<script>
+  (() => {
+    const links = document.querySelectorAll(".tag-bar a[data-tag]");
+    const rows = document.querySelectorAll(".home-posts li");
+    const show = (tag) => {
+      rows.forEach((li) => (li.hidden = !!tag && !li.dataset.tags.split(" ").includes(tag)));
+      links.forEach((a) => a.classList.toggle("active", a.dataset.tag === tag));
+    };
+    links.forEach((a) =>
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        history.replaceState(null, "", a.dataset.tag ? "#" + a.dataset.tag : location.pathname);
+        show(a.dataset.tag);
+      }),
+    );
+    show(decodeURIComponent(location.hash.slice(1)));
+  })();
+</script>
+{{ end }}

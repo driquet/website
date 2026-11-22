@@ -1,9 +1,10 @@
 ---
 title: "How Obsidian transformed my daily and weekly routines"
+description: "How I use Obsidian to manage tasks and keep my commitments, with daily and weekly routines."
 date: 2024-05-07T10:29:11+02:00
 draft: false
 showTableOfContents: true
-tags: ["Obsidian", "Template"]
+tags: ["Obsidian", "Productivity"]
 series: ["Obsidian"]
 series_order: 1
 ---

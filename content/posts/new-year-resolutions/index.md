@@ -1,7 +1,8 @@
 ---
 title: "Stop Setting Goals, Start Building Systems"
+description: "Why my New Year's resolutions always faded, and the habit-building principles that finally made them stick."
 date: 2026-01-09T00:00:00+01:00
-tags: ["Habits", "Psychology", "Behavior Change", "Personal Experience"]
+tags: ["Habits", "Productivity"]
 showTableOfContents: true
 url: new-years-resolution
 ---

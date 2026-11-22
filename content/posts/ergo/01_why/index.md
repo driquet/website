@@ -1,7 +1,8 @@
 ---
 title: "The Case for Ergonomics: Why Your Workspace Matters"
+description: "Why ergonomics matters when you spend your days at a desk: repetitive strain injury, its risks, and the long-term payoff of a better setup."
 date: 2025-01-24T00:00:00+01:00
-tags: ["Ergonomics", "Repetitive Strain Injury"]
+tags: ["Ergonomics", "Productivity"]
 showTableOfContents: true
 series: ["Ergonomics for the Modern Worker"]
 series_order: 1

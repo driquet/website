@@ -1,7 +1,8 @@
 ---
 title: "Pizza, Beer, and Code: YesWeCode Challenge Recap"
+description: "The challenges I wrote for YesWeCode, an internal Capture The Flag coding event: steganography, algorithms, graph theory and more."
 date: 2024-06-16T17:52:55+02:00
-tags: ["Coding", "Challenge", "CTF"]
+tags: ["Challenge", "CTF"]
 ---
 
 In my free time (when I have some), I enjoy solving programming challenges. December is always a special time because each morning I get to tackle a new AdventOfCode challenge. At work, we've created a communication channel for enthusiasts to share in this experience. Recently, for the second time, my colleague Antoine Honoré and I organized an internal coding challenge, called YesWeCode, structured as a Capture The Flag event. It was a huge success, and since I spent so much of my free time creating the challenges, I wanted to share them publicly.

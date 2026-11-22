@@ -1,7 +1,8 @@
 ---
 title: "No Labels? Borrow Them: Distilling a Classifier Locally"
+description: "Rent an LLM teacher for a few cents to label your data, keep a 150M student. How much of the teacher survives, and what does it cost?"
 date: 2026-11-21T10:00:00+01:00
-tags: ["AI", "Classification", "Encoders", "Distillation", "Benchmark"]
+tags: ["AI", "LLM", "NLP", "Classification", "Benchmark"]
 showTableOfContents: true
 series: ["Classifying Text Locally"]
 series_order: 3
@@ -237,7 +238,7 @@ options: {
       min: 0, max: 0.5,
       title: { display: true, text: "teacher's probability", color: '#898781' },
       ticks: { color: '#898781', stepSize: 0.1 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     },
     y: { ticks: { color: '#898781' }, grid: { display: false } }
   }
@@ -306,7 +307,7 @@ options: {
       min: 60, max: 90,
       title: { display: true, text: 'macro-F1 on the gold test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -414,7 +415,7 @@ options: {
       min: 60, max: 90,
       title: { display: true, text: 'student macro-F1 on the gold test set', color: '#898781' },
       ticks: { color: '#898781', stepSize: 5 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }
@@ -502,13 +503,13 @@ options: {
       min: 70, max: 82,
       title: { display: true, text: "the teacher's score (macro-F1) →", color: '#898781' },
       ticks: { color: '#898781', stepSize: 2 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     },
     y: {
       min: 70, max: 82,
       title: { display: true, text: "its student's score (macro-F1) →", color: '#898781' },
       ticks: { color: '#898781', stepSize: 2 },
-      grid: { color: document.documentElement.classList.contains('dark') ? '#2c2c2a' : '#e1e0d9' }
+      grid: { color: document.documentElement.classList.contains('dark') ? 'rgba(148, 163, 184, 0.2)' : '#e1e0d9' }
     }
   }
 }

@@ -1,7 +1,8 @@
 ---
 title: "Optimizing for Sustainability: Eroom-Nitot's Law and the One Billion Rows Challenge"
+description: "Making a simple Go solution to the One Billion Row Challenge twice as fast in half a workday, and what that says about software efficiency."
 date: 2024-07-24T12:08:03+02:00
-tags: ["Challenge", "Golang", "Optimization", "Deep Dive"]
+tags: ["Challenge", "Golang", "Performance", "Deep Dive"]
 showTableOfContents: true
 ---
 

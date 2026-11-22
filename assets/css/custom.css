@@ -196,3 +196,86 @@ span.f1 { display: inline-block; min-width: 3.2em; padding: 0.05em 0.4em; border
 /* Inline SVG figure: <figure class="svg-figure"><svg>..</svg></figure>, text follows the theme color */
 .prose figure.svg-figure { max-width: 34rem; margin: 2rem auto 0; }
 .prose figure.svg-figure svg { width: 100%; height: auto; color: inherit; }
+
+/* Homepage compact lists (layouts/partials/recent-articles/main.html) */
+.prose .home-list { list-style: none; padding-left: 0; }
+.prose .home-list li { padding-left: 0; margin: 0.6rem 0; }
+/* Fixed-width date column so titles line up (month-only dates on the homepage news, full dates in post rows) */
+.prose .home-date { display: inline-block; min-width: 5.2em; font-size: 0.8rem; opacity: 0.6; font-variant-numeric: tabular-nums; margin-right: 0.4rem; }
+.prose .home-posts .home-date { min-width: 6.6em; }
+.prose .home-blurb { font-size: 0.85rem; opacity: 0.75; }
+
+/* Subscribe card (layouts/partials/subscribe.html), eugeneyan.com style, in the theme's primary color */
+.subscribe { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; margin: 2.5rem 0; padding: 1.1rem 1.4rem; border-radius: 0.6rem; background: rgba(var(--color-primary-500), 0.12); border: 1px solid rgba(var(--color-primary-500), 0.35); }
+.subscribe-pitch { flex: 1 1 18rem; margin: 0; font-size: 0.95rem; line-height: 1.5; color: rgb(var(--color-neutral-700)); }
+.dark .subscribe-pitch { color: rgb(var(--color-neutral-200)); }
+.subscribe-pitch b { color: rgb(var(--color-neutral-900)); }
+.dark .subscribe-pitch b { color: rgb(var(--color-neutral-50)); }
+.subscribe-pitch a { color: rgb(var(--color-primary-600)); text-decoration: underline; }
+.dark .subscribe-pitch a { color: rgb(var(--color-primary-300)); }
+.subscribe-fields { display: flex; gap: 0.5rem; flex: 1 1 18rem; max-width: 24rem; }
+.subscribe-fields input { flex: 1; min-width: 0; padding: 0.5rem 0.75rem; font-size: 0.9rem; border-radius: 0.4rem; color: inherit; background: rgb(var(--color-neutral)); border: 1px solid rgba(var(--color-neutral-400), 0.6); }
+.dark .subscribe-fields input { background: rgb(var(--color-neutral-800)); }
+.subscribe-fields input:focus { outline: 2px solid rgb(var(--color-primary-500)); outline-offset: 1px; }
+.subscribe-fields button { padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 600; border-radius: 0.4rem; cursor: pointer; color: rgb(var(--color-neutral-50)); background: rgb(var(--color-primary-600)); }
+.subscribe-fields button:hover { background: rgb(var(--color-primary-500)); }
+
+/* List column (homepage and list pages): section headings with a strong rule; post rows: faint separator between entries */
+.prose.home-col { max-width: none; margin-top: 1rem; text-align: left; }
+.prose.home-col h2 { font-size: 1.25rem; margin-top: 2.5rem; margin-bottom: 0.75rem; padding-bottom: 0.3rem; border-bottom: 2px solid rgba(var(--color-neutral-400), 0.7); }
+.prose .home-list a { font-weight: 600; }
+.prose .home-posts li { margin: 0; padding: 0.7rem 0; border-bottom: 1px solid rgba(var(--color-neutral-500), 0.18); }
+.prose .home-posts li:last-child { border-bottom: none; }
+
+/* Tag bar on /posts and tag pages (layouts/partials/post-list.html), eugeneyan.com/writing style */
+.prose .tag-bar { display: flex; flex-wrap: wrap; gap: 0.2rem 0.9rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; padding-bottom: 0.9rem; margin-bottom: 0; border-bottom: 2px solid rgba(var(--color-neutral-400), 0.7); }
+.prose .tag-bar a { font-weight: 400; text-decoration: none; color: rgb(var(--color-neutral-400)); }
+.prose .tag-bar a span { opacity: 0.5; }
+.prose .tag-bar a:hover, .prose .tag-bar a.active { color: rgb(var(--color-primary-400)); }
+.prose .badge-draft { --b: var(--color-primary-500); margin-left: 0.3rem; }
+.dark .prose .badge-draft { --b: var(--color-primary-300); }
+
+/* Site width: header, content and footer share the 54rem column (same as homepage lists) on every page. */
+header .max-w-7xl > *,
+#main-content,
+#site-footer { max-width: 54rem; width: 100%; margin-left: auto; margin-right: auto; }
+#single_header,
+.article-content { max-width: none; }
+/* Post footer (prev/next links) shares .max-w-prose with the article: full width, not justified */
+#main-content footer.max-w-prose { max-width: none; text-align: start; }
+
+/* Table of contents (eugeneyan.com style): in the right margin, outside the column, when the screen is wide
+   enough; otherwise the theme's collapsible TOC at the top of the post. */
+#main-content section:has(.toc) { position: relative; flex-direction: column; }
+#main-content div:has(> .toc) { order: -1; padding-left: 0; margin-left: 0; max-width: none; }
+.toc-right { display: none !important; }
+.toc-inside { display: block !important; margin-bottom: 1.5rem; }
+.toc-inside > summary { display: list-item !important; }
+@media (min-width: 1400px) {
+  #main-content div:has(> .toc) { position: absolute; left: calc(100% + 2.5rem); top: 0; height: 100%; width: 14rem; }
+  .toc-right { display: block !important; }
+  .toc-inside { display: none !important; }
+  .toc-right::before { content: "Contents"; display: block; margin-bottom: 0.4rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(var(--color-neutral-400)); }
+  .toc-right #TableOfContents { font-size: 0.85rem; }
+  .toc-right > div { padding-top: 0; }
+  .toc-right #TableOfContents > ul { margin-top: 0; }
+}
+
+/* Publications and Talks (entry shortcode): same look as /posts: strong rule under each section, faint line between entries.
+   Talks has no section heading, so the strong rule goes under the page title. */
+.prose:has(> .entry) > h2 { padding-bottom: 0.4rem; margin-bottom: 0.3rem; border-bottom: 2px solid rgba(var(--color-neutral-400), 0.7); }
+.prose:has(> .entry):not(:has(> h2)) { border-top: 2px solid rgba(var(--color-neutral-400), 0.7); padding-top: 0.3rem; }
+.prose > .entry { margin: 0; padding: 0.8rem 0; border-bottom: 1px solid rgba(var(--color-neutral-500), 0.18); }
+.prose > .entry:not(:has(+ .entry)) { border-bottom: none; }
+.prose hr.list-rule { margin: 0.5rem 0 0; border: 0; border-top: 2px solid rgba(var(--color-neutral-400), 0.7); }
+/* Homepage section heading with its "All ..." link on the right */
+.prose .home-h2 { display: flex; justify-content: space-between; align-items: baseline; }
+.prose .home-h2 a { font-size: 0.85rem; font-weight: 500; text-decoration: none; }
+
+/* Code blocks and charts: 80% of the column, centered; code left-aligned inside (the line-number table must not be
+   centered like content tables). Full width on small screens. */
+.prose .highlight-wrapper,
+.prose .chart { width: 80%; margin-left: auto; margin-right: auto; }
+.prose .chroma .lntable { width: 100%; margin-left: 0; margin-right: 0; }
+.prose .chroma .lntable td:last-child { width: 100%; }
+@media (max-width: 768px) { .prose .highlight-wrapper, .prose .chart { width: 100%; } }

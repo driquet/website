@@ -10,14 +10,14 @@ rtl = false
 dateFormat = "2 January 2006"
 # logo = "img/logo.png"
 # secondaryLogo = "img/secondary-logo.png"
-description = "Damien Riquet: Lead Research Engineer at Hornetsecurity, a Proofpoint company. ML & NLP for email security; writing about research, Go, and side projects."
-# copyright = "Copy, _right?_ :thinking_face:"
+description = "Damien Riquet: turning NLP research into email protection that runs at scale. Lead Research Engineer at Hornetsecurity, a Proofpoint company; AI SIG lead at M3AAWG."
+copyright = "© 2023–{ year } Damien Riquet · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 
 [params.author]
 name = "Damien Riquet"
 image = "img/profile.webp"
-headline = "Lead Research Engineer at Hornetsecurity, a Proofpoint company.<br>ML & NLP for email security; writing about research, Go, and side projects."
-bio = "Lead Research Engineer at Hornetsecurity, a Proofpoint company.<br>ML & NLP for email security; writing about research, Go, and side projects."
+headline = "Turning NLP research into email protection that runs at scale, and supervising the PhDs behind it.<br>Lead Research Engineer at Hornetsecurity, a Proofpoint company · AI SIG lead at M3AAWG."
+bio = "Turning NLP research into email protection that runs at scale, and supervising the PhDs behind it.<br>Lead Research Engineer at Hornetsecurity, a Proofpoint company · AI SIG lead at M3AAWG."
 links = [
     { envelope = "mailto:d.riquet@gmail.com" },
     { graduation-cap = "https://scholar.google.com/citations?user=1Cymf7kAAAAJ&hl=en" },
