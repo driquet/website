@@ -569,7 +569,7 @@ On the arXiv task. Labeling is the training pool plus validation (9,000 papers):
 
 **The point is everything else.** The student answers in 32 ms on the laptop's GPU, ten times faster than the API. No network, no rate limit, no API key, and no provider who can change or retire the model under you. Your texts leave the machine once, to be labeled, and never again. And if they can't leave it at all, OneJev1.6-4B labels them locally, in under an hour, for 4.8 points less.
 
-**What the gold labels would buy.** 5.3 points over the best student, and they make the student itself optional: TF-IDF on the same labels trains in 33 seconds and answers in a millisecond. But 8,000 labels by hand are 65 to 130 hours, two to three weeks of full-time work, against an hour of API calls; [part 1](/do-you-need-an-llm/#how-many-labels-does-the-encoder-need) suggests a few hundred per class would already get close on a task where the words give the answer away. That's for a later post.
+**What the gold labels would buy.** 5.3 points over the best student, and they make the student itself optional: TF-IDF on the same labels trains in 33 seconds and answers in a millisecond. But 8,000 labels by hand are 65 to 130 hours, two to three weeks of full-time work, against an hour of API calls; [part 1](/do-you-need-an-llm/#how-many-labels-does-the-encoder-need) suggests a few hundred per class would already get close on a task where the words give the answer away. That's [the next post](/a-few-good-labels/).
 
 ## So, should you distill?
 
@@ -638,7 +638,7 @@ Back to the starting point: you have a classification task, but no gold labels. 
     <rect x="300" y="540" width="240" height="100" rx="12" fill="#d4a72c" fill-opacity="0.15" stroke="#d4a72c" stroke-width="2" stroke-dasharray="6 4"/>
     <text x="420" y="564" font-size="15" font-weight="700">Mix gold and silver</text>
     <text x="420" y="584" font-size="12" opacity="0.85">distill, then add a few gold labels</text>
-    <text x="420" y="603" font-size="12" font-weight="700" fill="#d4a72c">the next post</text>
+    <a href="/a-few-good-labels/"><text x="420" y="603" font-size="12" font-weight="700" fill="#d4a72c" text-decoration="underline">the next post</text></a>
     <text x="420" y="627" font-size="11" opacity="0.7">or label all by hand: F1 84.7, 65 to 130 h</text>
   </g>
 </svg>
@@ -678,7 +678,7 @@ Same recipe, bigger scale, on another question: **how private is a text?**, from
 
 ## What's next
 
-- **A few gold labels on top?** Fine-tune the student, or a small teacher, on 10 to 100 gold labels per class after distillation.
+- **A few gold labels on top?** Fine-tune the student, or a small teacher, on 10 to 100 gold labels per class after distillation. That's [the next post](/a-few-good-labels/).
 - **Fine-tune or optimize the prompt?** Plain vs. GEPA-optimized prompt, base vs. LoRA weights.
 
 ## Related reading
